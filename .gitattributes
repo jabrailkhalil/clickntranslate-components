@@ -1,0 +1,5 @@
+# Signed targets are exact bytes. Git must not rewrite their line endings.
+public/** -text whitespace=cr-at-eol
+*.yml text eol=lf
+*.py text eol=lf
+*.lock text eol=lf
