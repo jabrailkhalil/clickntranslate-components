@@ -1,0 +1,60 @@
+name: Prepare Windows runtime candidate
+on:
+  workflow_dispatch:
+    inputs:
+      source_ref:
+        description: Exact ClicknTranslate source commit containing the component tools
+        required: true
+permissions:
+  contents: read
+jobs:
+  windows:
+    runs-on: windows-2022
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          path: components
+      - uses: actions/checkout@v4
+        with:
+          repository: jabrailkhalil/clickntranslate
+          ref: ${{ inputs.source_ref }}
+          path: application
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Prepare exact standalone runtime
+        shell: pwsh
+        run: |
+          python application/tools/prepare_component_runtime.py --recipe components/recipes/rapidocr-windows-x64.json --output "$env:RUNNER_TEMP/runtime-candidate"
+          if ($LASTEXITCODE -ne 0) { throw 'Runtime preparation failed' }
+      - name: Check standalone recognizers
+        shell: pwsh
+        run: |
+          $env:PYTHONPATH = "$PWD/application/src"
+          @'
+          import os, sys, shutil
+          from pathlib import Path
+          from rapidocr_models import download_models
+          from component_runtime import validate_rapidocr
+          import requests
+          root = Path(os.environ['RUNNER_TEMP']) / 'runtime-candidate'
+          def download(url, destination, **_):
+              response = requests.get(url, timeout=120)
+              response.raise_for_status()
+              Path(destination).write_bytes(response.content)
+          download_models(root / 'models' / 'ppocrv5', download)
+          validate_rapidocr(root, {'python':'runtime/python.exe', 'worker':'runtime/adapter/ocr_worker.py'})
+          (root / 'validation.txt').write_text('Standalone Windows native inference passed. Frozen application not tested.\n')
+          '@ | python -
+          if ($LASTEXITCODE -ne 0) { throw 'Runtime validation failed' }
+      - uses: actions/upload-artifact@v4
+        with:
+          name: rapidocr-windows-runtime-preview
+          path: |
+            ${{ runner.temp }}/runtime-candidate/rapidocr-windows-x64-cp312-runtime.zip
+            ${{ runner.temp }}/runtime-candidate/runtime-artifact.json
+            ${{ runner.temp }}/runtime-candidate/requirements.lock
+            ${{ runner.temp }}/runtime-candidate/validation.txt
+          compression-level: 0
+          retention-days: 30

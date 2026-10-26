@@ -88,6 +88,10 @@ def refresh_online(output, key_dir):
     root.signed.verify_delegate('targets', targets.signed_bytes, targets.signatures)
     if targets.signed.expires <= now or root.signed.expires <= now:
         raise RuntimeError('Offline root/targets approval must be renewed before expiry')
+    if targets.signed.expires - now < timedelta(days=14):
+        print('::warning::Offline targets approval expires within 14 days; renew with the maintainer key.')
+    if root.signed.expires - now < timedelta(days=30):
+        print('::warning::Offline root expires within 30 days; perform an authenticated root rotation.')
     snapshot = Metadata.from_file(str(metadata / 'snapshot.json'))
     snapshot.signed.version += 1
     snapshot.signed.expires = min(now + timedelta(days=30), targets.signed.expires)

@@ -1,6 +1,6 @@
 {
   "schema": 1,
-  "revision": 2,
+  "revision": 3,
   "artifacts": {
     "31f283abd7973762e1ef276d2a533524ffbfd6bb87bfb694ce73ac633d816152": {
       "size": 120548843,
@@ -150,6 +150,105 @@
         "macos": false,
         "linux": false
       }
+    },
+    {
+      "id": "rapidocr-windows-x64-ppocrv5-r2",
+      "component": "ocr.rapidocr",
+      "revision": 2,
+      "upstream": "3.10.0",
+      "models": "PP-OCRv5 mobile",
+      "contract": 1,
+      "channel": "preview",
+      "os": "windows",
+      "arch": "x86_64",
+      "min_os": "10",
+      "app": ">=1.8.2,<2",
+      "python": "runtime/python.exe",
+      "worker": "runtime/adapter/ocr_worker.py",
+      "languages": [
+        "ar",
+        "be",
+        "bg",
+        "cs",
+        "da",
+        "de",
+        "en",
+        "es",
+        "fa",
+        "fi",
+        "fr",
+        "hr",
+        "hu",
+        "id",
+        "it",
+        "mk",
+        "ms",
+        "nl",
+        "no",
+        "pl",
+        "ps",
+        "pt",
+        "ro",
+        "ru",
+        "sk",
+        "sl",
+        "sr",
+        "sv",
+        "tr",
+        "uk",
+        "ur",
+        "vi",
+        "zh"
+      ],
+      "files": [
+        {
+          "sha256": "31f283abd7973762e1ef276d2a533524ffbfd6bb87bfb694ce73ac633d816152",
+          "kind": "zip",
+          "destination": "runtime"
+        },
+        {
+          "sha256": "4d97c44a20d30a81aad087d6a396b08f786c4635742afc391f6621f5c6ae78ae",
+          "kind": "file",
+          "destination": "models/ppocrv5/ch_PP-OCRv5_det_mobile.onnx"
+        },
+        {
+          "sha256": "e47acedf663230f8863ff1ab0e64dd2d82b838fceb5957146dab185a89d6215c",
+          "kind": "file",
+          "destination": "models/ppocrv5/ch_ppocr_mobile_v2.0_cls_mobile.onnx"
+        },
+        {
+          "sha256": "c3461add59bb4323ecba96a492ab75e06dda42467c9e3d0c18db5d1d21924be8",
+          "kind": "file",
+          "destination": "models/ppocrv5/en_PP-OCRv5_rec_mobile.onnx"
+        },
+        {
+          "sha256": "90f761b4bfcce0c8c561c0cb5c887b0971d3ec01c32164bdf7374a35b0982711",
+          "kind": "file",
+          "destination": "models/ppocrv5/cyrillic_PP-OCRv5_rec_mobile.onnx"
+        },
+        {
+          "sha256": "c1192e632d0baa9146ae5b756a0e635e3dc63c1733737ebfd1629e87144e9295",
+          "kind": "file",
+          "destination": "models/ppocrv5/arabic_PP-OCRv5_rec_mobile.onnx"
+        },
+        {
+          "sha256": "b20bd37c168a570f583afbc8cd7925603890efbcdc000a59e22c269d160b5f5a",
+          "kind": "file",
+          "destination": "models/ppocrv5/latin_PP-OCRv5_rec_mobile.onnx"
+        },
+        {
+          "sha256": "5825fc7ebf84ae7a412be049820b4d86d77620f204a041697b0494669b1742c5",
+          "kind": "file",
+          "destination": "models/ppocrv5/ch_PP-OCRv5_rec_mobile.onnx"
+        }
+      ],
+      "validation": {
+        "standalone_windows": true,
+        "frozen_application": false,
+        "macos": false,
+        "linux": false
+      },
+      "notes": "Controlled lifecycle revision; verified runtime and model artifacts are unchanged."
     }
   ]
 }
