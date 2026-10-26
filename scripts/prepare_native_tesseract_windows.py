@@ -49,11 +49,14 @@ def prepare(recipe_path,output):
         subprocess.run(['cmake','-S',str(sources[name]),'-B',str(build_dir),*flags,*extra],check=True,env=environment)
         subprocess.run(['cmake','--build',str(build_dir),'--parallel','4','--target','install'],check=True,env=environment)
     build('zlib',['-DZLIB_BUILD_EXAMPLES=OFF'])
-    zlib=next(p for p in (prefix/'lib').glob('*.lib') if 'static' in p.name.lower() and 'zlib' in p.name.lower())
-    flags+=['-DZLIB_LIBRARY='+str(zlib),'-DZLIB_INCLUDE_DIR='+str(prefix/'include'),'-DZLIB_USE_STATIC_LIBS=ON']
+    # Pinned zlib 1.3.2 calls its MSVC static target zs.lib (z.lib imports z.dll).
+    zlib=prefix/'lib/zs.lib'
+    if not zlib.is_file():raise RuntimeError('Pinned zlib static library was not installed')
+    flags+=['-DZLIB_LIBRARY='+str(zlib),'-DZLIB_LIBRARY_RELEASE='+str(zlib),
+            '-DZLIB_INCLUDE_DIR='+str(prefix/'include'),'-DZLIB_USE_STATIC_LIBS=ON']
     build('libpng',['-DPNG_SHARED=OFF','-DPNG_STATIC=ON','-DPNG_TESTS=OFF','-DPNG_TOOLS=OFF'])
     png=next(p for p in (prefix/'lib').glob('*.lib') if 'png' in p.name.lower() and 'static' in p.name.lower())
-    flags+=['-DPNG_LIBRARY='+str(png),'-DPNG_PNG_INCLUDE_DIR='+str(prefix/'include')]
+    flags+=['-DPNG_LIBRARY='+str(png),'-DPNG_LIBRARY_RELEASE='+str(png),'-DPNG_PNG_INCLUDE_DIR='+str(prefix/'include')]
     build('leptonica',['-DBUILD_PROG=OFF','-DENABLE_GIF=OFF','-DENABLE_JPEG=OFF','-DENABLE_TIFF=OFF',
         '-DENABLE_WEBP=OFF','-DENABLE_OPENJPEG=OFF','-DSW_BUILD=OFF'])
     build('tesseract',['-DBUILD_TRAINING_TOOLS=OFF','-DBUILD_TESTS=OFF','-DDISABLE_CURL=ON',
