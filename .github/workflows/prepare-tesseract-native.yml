@@ -6,6 +6,9 @@ on:
   workflow_dispatch:
 permissions:
   contents: read
+concurrency:
+  group: native-tesseract-${{ github.ref }}
+  cancel-in-progress: true
 jobs:
   native:
     runs-on: windows-latest

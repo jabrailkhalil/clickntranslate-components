@@ -91,12 +91,12 @@ def prepare(recipe_path,output):
         response=requests.get(item['url'],timeout=90);response.raise_for_status()
         path=models/(language+'.traineddata');path.write_bytes(response.content)
         assert digest(path)==item['sha256']
-        result=subprocess.run([str(runtime/'tesseract.exe'),str(image),'stdout','--tessdata-dir',str(models),'-l',language,'--psm','6'],capture_output=True,text=True,timeout=60)
+        result=subprocess.run([str(runtime/'tesseract.exe'),str(image),'stdout','--tessdata-dir',str(models),'-l',language,'--psm','6'],capture_output=True,text=True,encoding='utf-8',errors='replace',timeout=60)
         assert result.returncode==0,result.stderr
         results[language]=result.stdout.strip()
     assert 'TEST' in results['eng'],results
     positioned=subprocess.run([str(runtime/'tesseract.exe'),str(image),'stdout','--tessdata-dir',str(models),
-        '-l','eng','--psm','6','tsv'],capture_output=True,text=True,timeout=60,check=True)
+        '-l','eng','--psm','6','tsv'],capture_output=True,text=True,encoding='utf-8',errors='replace',timeout=60,check=True)
     assert positioned.stdout.startswith('level\tpage_num') and '\tTEST' in positioned.stdout,positioned.stdout
     archive=output/'tesseract-windows-x64-5.5.3-native-runtime.zip'
     with zipfile.ZipFile(archive,'w',zipfile.ZIP_DEFLATED,compresslevel=6) as bundle:
