@@ -1,0 +1,57 @@
+{
+  "date": "2026-10-26",
+  "catalog_revision": 4,
+  "channel": "stable",
+  "platform": "Windows x64",
+  "user_authorization": "Publish only Windows component packages and the signed catalog; no application release.",
+  "components": [
+    {
+      "engine": "rapidocr",
+      "tag": "rapidocr-windows-x64-stable-r4",
+      "sha256": "2bdcf834399a24f9293734d039eb0d4eca60692661bc90bfa99c64d624ff9944",
+      "size": 121253668,
+      "original_sha256": "6cff8ab972bfd63e63b0778ae9a906a049fd4fe981619e22d2bace7eff85527b",
+      "original_files_preserved": true
+    },
+    {
+      "engine": "argos",
+      "tag": "argos-windows-x64-stable-r2",
+      "sha256": "9e4e5aaf1afe12eea42812f22b9e3be4e3694a5bfe8198c456d7ce141a1109e6",
+      "size": 47894945,
+      "original_sha256": "893edc601d51acbde41b05a40b695bf37842362cf33087efb49440904c8547a4",
+      "original_files_preserved": true
+    },
+    {
+      "engine": "hymt",
+      "tag": "hymt-windows-x64-b11899-stable-r3",
+      "sha256": "06bf8a39607b155e14b64756b04ea69b03e7d17ac3d8d58d7d270f86b24c47d2",
+      "size": 21039000,
+      "original_sha256": "42bc720e025f1c1540b429c30c4d04225e1888d85614a68607b2a2454c705812",
+      "original_files_preserved": true
+    },
+    {
+      "engine": "easyocr",
+      "tag": "easyocr-windows-x64-stable-r2",
+      "sha256": "72abd2543ef80eed2598cfefb5441ea507e89e0f72f9cc2d204763c0068f3f11",
+      "size": 266527468,
+      "original_sha256": "839024e00fb26d7dea867f0498e104a878d94f63bd212b217b85ed1563c9456e",
+      "original_files_preserved": true
+    },
+    {
+      "engine": "tesseract",
+      "tag": "tesseract-windows-x64-native-stable-r2",
+      "sha256": "9373b449ce9bec752cf9d6c56b5fa9f86def57a65eca137378200b78a7b3a295",
+      "size": 1754060,
+      "original_sha256": "8a0f97a48bc5f6945362941aee9cb00aabf59026c27e749e37a63d8db6f4c33a",
+      "original_files_preserved": true
+    }
+  ],
+  "frozen_client": "frozen-client.json",
+  "native_checks": "final-runtime-native-checks.json",
+  "tesseract": "Source-built PNG/TSV runtime with its corresponding source archives; the older third-party DLL candidate is not published.",
+  "application_release": false,
+  "macos_or_linux_profiles_published": false,
+  "old_preview_profiles_preserved": true,
+  "private_signing_keys_published": false,
+  "verification_states_recorded_before_public_catalog_approval": true
+}

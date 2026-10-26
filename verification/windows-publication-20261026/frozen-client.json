@@ -1,0 +1,164 @@
+{
+  "status": "passed",
+  "platform": "win32",
+  "architecture": "AMD64",
+  "frozen": true,
+  "screenshots": [
+    "en-dark.png",
+    "en-light.png",
+    "ru-dark.png",
+    "ru-light.png",
+    "ar-dark.png",
+    "ar-light.png",
+    "hi-dark.png",
+    "hi-light.png"
+  ],
+  "checks": {
+    "gui": "four locales, two themes, five settings pages",
+    "ocr_worker": "bundled RapidOCR recognized the generated fixture",
+    "argos_worker": "bundled probe returned structured data",
+    "managed_installed": [
+      {
+        "engine": "rapidocr",
+        "bundle": "rapidocr-windows-x64-stable-r4",
+        "selected": [
+          "ar",
+          "be",
+          "bg",
+          "cs",
+          "da",
+          "de",
+          "en",
+          "es",
+          "fa",
+          "fi",
+          "fr",
+          "hr",
+          "hu",
+          "id",
+          "it",
+          "mk",
+          "ms",
+          "nl",
+          "no",
+          "pl",
+          "ps",
+          "pt",
+          "ro",
+          "ru",
+          "sk",
+          "sl",
+          "sr",
+          "sv",
+          "tr",
+          "uk",
+          "ur",
+          "vi",
+          "zh"
+        ]
+      },
+      {
+        "engine": "tesseract",
+        "bundle": "tesseract-windows-x64-native-stable-r2",
+        "selected": [
+          "ara",
+          "eng",
+          "rus"
+        ]
+      },
+      {
+        "engine": "easyocr",
+        "bundle": "easyocr-windows-x64-stable-r2",
+        "selected": [
+          "arabic",
+          "cyrillic_g2",
+          "english_g2"
+        ]
+      },
+      {
+        "engine": "argos",
+        "bundle": "argos-windows-x64-stable-r2",
+        "selected": [
+          "ar__en",
+          "en__ar",
+          "en__ru",
+          "ru__en"
+        ]
+      },
+      {
+        "engine": "hymt",
+        "bundle": "hymt-windows-x64-b11899-stable-r3",
+        "selected": [
+          "ar",
+          "bn",
+          "bo",
+          "cs",
+          "de",
+          "en",
+          "es",
+          "fa",
+          "fr",
+          "gu",
+          "he",
+          "hi",
+          "id",
+          "it",
+          "ja",
+          "kk",
+          "km",
+          "ko",
+          "mn",
+          "mr",
+          "ms",
+          "my",
+          "nl",
+          "pl",
+          "pt",
+          "ru",
+          "ta",
+          "te",
+          "th",
+          "tl",
+          "tr",
+          "ug",
+          "uk",
+          "ur",
+          "vi",
+          "yue",
+          "zh",
+          "zh-Hant"
+        ]
+      }
+    ],
+    "managed_actual_inference": {
+      "rapidocr": "NATIVE OCR CHECK",
+      "tesseract": "NATIVE OCR CHECK",
+      "easyocr": "NATIVE OCR CHECK",
+      "argos": "Привет, мир!",
+      "hymt": "Привет, мир!"
+    },
+    "native_engine_modules_in_gui": []
+  },
+  "ui_backend": "Qt offscreen with actual Windows fonts",
+  "instrumentation": "Only candidate_smoke.py changed in the isolated QA executable; production modules match the delivered signed build.",
+  "production_modules_equal_to_user_build": [
+    "component_catalog",
+    "component_download",
+    "component_store",
+    "component_runtime",
+    "component_argos",
+    "component_easyocr",
+    "component_hymt",
+    "ocr",
+    "translater",
+    "settings_window",
+    "platform_support"
+  ],
+  "user_executable_sha256": "e6770acac9f4900671feb12bc89181947308172c87524719827a22bb9df97c4e",
+  "test_executable_sha256": "d2266abc960a8242b06fc36a58a35a6bd939a6e45666504d2c2e1f81df433201",
+  "cold_component_store": true,
+  "model_cache_seeded": false,
+  "runtime_and_model_downloads": "actual public URLs",
+  "metadata_during_prepublication_test": "locally served TUF metadata signed by the existing maintainer keys",
+  "application_release": false
+}

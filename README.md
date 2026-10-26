@@ -12,19 +12,25 @@ Install and update components from **Language packages** inside the application.
 - `recipes/`: maintainer inputs and exact dependency locks.
 - `scripts/`: publisher and upstream discovery. Root/targets private keys are never stored here or uploaded to CI.
 
-The initial Windows x64 RapidOCR runtime is a **preview**. It is tested separately from the application and does not declare frozen-app, macOS or Linux validation complete. The stable channel remains empty until those release checks are completed. Existing installed engines continue to work.
+The Windows x64 stable catalog now contains five tested component packages. This publication does not release or update the ClicknTranslate application itself. It is available to compatible component-aware clients, including the signed Windows test build from commit `193dff1`. The older RapidOCR preview profiles remain available.
 
-Tesseract Windows has a pinned **candidate recipe** and a manual native-validation workflow. Candidate artifacts are not published to the trusted catalog automatically. Tesseract language files remain separate: the application downloads only selected languages and preserves them across engine updates. Public promotion requires the native/frozen checks and the bundled DLL license/source inventory.
+| Component | Published Windows runtime |
+| --- | --- |
+| RapidOCR | 3.10.0 with explicit PP-OCRv5 models |
+| Tesseract | 5.5.3, source-built PNG/TSV executable |
+| EasyOCR | 1.7.2 with CPU Torch 2.14.1 and 14 model families |
+| Argos | 1.11.0 with pinned EN↔RU / EN↔AR directions |
+| Hy-MT | HY-MT1.5-1.8B Q4_K_M with llama.cpp b11899 |
 
-Argos Windows has a private-runtime **candidate** and four pinned EN↔RU/EN↔AR model directions. Its manual workflow checks real translation, the English pivot, streaming, update preservation, offline removal, cancellation and rollback. It uses the application sentence splitter without Torch/Stanza/SpaCy. Original model archives retain upstream notices.
+Tesseract is compiled from pinned Tesseract, Leptonica, libpng and zlib sources. It includes format configs required by fullscreen TSV recognition. Its native executable imports only Windows system libraries; the older candidate with a third-party DLL closure is not published. Corresponding source archives and the build recipe accompany its component Release. Recognition models remain separate selected downloads.
 
-New RapidOCR/Argos candidates include pinned Microsoft runtime files and audit native imports instead of depending on the developer's global Visual C++ installation. Candidate locks and CI artifacts do not approve publication: redistribution review and frozen-application checks remain explicit gates. Published runtime assets and the existing catalog are never overwritten by preparation.
+Python-based runtimes use private interpreters and pinned wheels. Original vendor licenses/notices and Microsoft runtime terms are retained; publication adds notices without changing the previously tested code or DLLs. All final archives are hash-verified and natively validated. Prepared candidates are never promoted automatically, and published runtime bytes are never overwritten.
 
-Hy-MT Windows has a native **candidate** with a separately authenticated GGUF model, its matching license/document revision, and a curated llama.cpp CPU runner. The manual workflow compares b9048 and b11899 using the same model, verifies loaded private DLL paths and tests update without another model download, rollback, cancellation, invalid GGUF rejection and removal while a worker holds a lease. Candidate preparation does not publish a new model or runtime.
+Argos uses the application's sentence splitter without Torch/Stanza/SpaCy. Hy-MT's runner and 1.13 GB GGUF model are separate authenticated objects, so runner updates reuse an unchanged model. EasyOCR preserves its original shared model families and validates each selected recognizer before activation. Removal, cancellation, rollback and selected-model preservation use the same transactional store for all engines.
 
-EasyOCR Windows has a CPU-only **candidate** with its original 14 model families. Its manual workflow prepares exact Torch/torchvision CPU wheels and a hash-locked runtime, downloads authenticated upstream model ZIPs, and checks real recognition, updates, cancellation, invalid checkpoints, rollback and offline removal. Contract 2 supports installing a declared archive member; older clients keep using their supported profiles. Candidate artifacts remain separate from the public catalog.
+[Publication verification](verification/windows-publication-20261026/approval.json) and [frozen client checks](verification/windows-publication-20261026/frozen-client.json) record the final hashes, cold installation from actual public runtime/model URLs, real inference through all five engines and production module equality with the delivered Windows test build. The isolated QA executable changes only the explicit smoke-test harness. No native engine SDK is imported into the Qt process. UI checks use Qt offscreen with Windows fonts.
 
-[Windows verification, 26 October 2026](verification/all-engines-windows-20261026.json) records the successful EasyOCR native CI run, verified final archive hashes, 355 source tests, 72 rendered UI states and all five engines working in one isolated profile. It also retains exact OCR outputs and platform/publication limits. These checks do not promote a candidate to stable or replace frozen-application validation.
+[Earlier candidate verification](verification/all-engines-windows-20261026.json) retains preparation history, 355 source tests, 72 rendered UI states, lifecycle tests and exact OCR samples. Synthetic OCR checks establish runtime viability and do not guarantee accuracy on every image. macOS/Linux candidates remain separate from this Windows publication.
 
 ## Maintenance
 

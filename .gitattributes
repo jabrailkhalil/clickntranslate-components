@@ -3,3 +3,4 @@ public/** -text whitespace=cr-at-eol
 *.yml text eol=lf
 *.py text eol=lf
 *.lock text eol=lf
+verification/windows-publication-*/** -text whitespace=cr-at-eol

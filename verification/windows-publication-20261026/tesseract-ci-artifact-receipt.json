@@ -1,0 +1,7 @@
+{
+  "run": 40386763638,
+  "artifact_id": 12680138123,
+  "artifact_sha256": "3ad6b1b7db0784a03bf7d4b40b451b8b92ff4ff544d5a8e9447712ef405dd93a",
+  "source_commit": "7bc7e8aa71861329dd99b51587d56e55180f38ee",
+  "final_runtime_sha256": "9373b449ce9bec752cf9d6c56b5fa9f86def57a65eca137378200b78a7b3a295"
+}
