@@ -1,0 +1,214 @@
+{
+  "date": "2026-10-26",
+  "application_build": false,
+  "catalog_changed": false,
+  "candidates": [
+    {
+      "component": "rapidocr",
+      "run": 40323284684,
+      "url": "https://github.com/jabrailkhalil/clickntranslate-components/actions/runs/40323284684",
+      "source_commit": "9e58a81fb1864abf8a0242d92b7516f7c03881c8",
+      "conclusion": "success",
+      "artifact": {
+        "filename": "rapidocr-windows-x64-cp312-runtime.zip",
+        "size": 121121385,
+        "sha256": "6cff8ab972bfd63e63b0778ae9a906a049fd4fe981619e22d2bace7eff85527b",
+        "unpacked_size": 285656470
+      },
+      "native_validation": {
+        "available": true,
+        "error": "",
+        "dll_runtime": {
+          "msvcp140.dll": "bundled",
+          "msvcp140_1.dll": "bundled",
+          "msvcp140_2.dll": "bundled"
+        }
+      },
+      "native_import_audit": {
+        "binary_count": 86,
+        "required_system_libraries": [
+          "advapi32.dll",
+          "api-ms-win-core-path-l1-1-0.dll",
+          "api-ms-win-core-synch-l1-2-0.dll",
+          "api-ms-win-core-winrt-error-l1-1-0.dll",
+          "api-ms-win-core-winrt-l1-1-0.dll",
+          "api-ms-win-core-winrt-string-l1-1-0.dll",
+          "api-ms-win-crt-conio-l1-1-0.dll",
+          "api-ms-win-crt-convert-l1-1-0.dll",
+          "api-ms-win-crt-environment-l1-1-0.dll",
+          "api-ms-win-crt-filesystem-l1-1-0.dll",
+          "api-ms-win-crt-heap-l1-1-0.dll",
+          "api-ms-win-crt-locale-l1-1-0.dll",
+          "api-ms-win-crt-math-l1-1-0.dll",
+          "api-ms-win-crt-private-l1-1-0.dll",
+          "api-ms-win-crt-process-l1-1-0.dll",
+          "api-ms-win-crt-runtime-l1-1-0.dll",
+          "api-ms-win-crt-stdio-l1-1-0.dll",
+          "api-ms-win-crt-string-l1-1-0.dll",
+          "api-ms-win-crt-time-l1-1-0.dll",
+          "api-ms-win-crt-utility-l1-1-0.dll",
+          "bcrypt.dll",
+          "cabinet.dll",
+          "crypt32.dll",
+          "d3d11.dll",
+          "d3dcompiler_47.dll",
+          "dbghelp.dll",
+          "dxgi.dll",
+          "gdi32.dll",
+          "iphlpapi.dll",
+          "kernel32.dll",
+          "msi.dll",
+          "msvcrt.dll",
+          "ntdll.dll",
+          "ole32.dll",
+          "oleaut32.dll",
+          "propsys.dll",
+          "psapi.dll",
+          "rpcrt4.dll",
+          "secur32.dll",
+          "setupapi.dll",
+          "user32.dll",
+          "version.dll",
+          "winmm.dll",
+          "ws2_32.dll"
+        ],
+        "unresolved_private_libraries": []
+      },
+      "artifact_download_sha256_verified": true,
+      "publication": "unpublished candidate",
+      "redistribution_review": false,
+      "frozen_application": false,
+      "macos": false,
+      "linux": false
+    },
+    {
+      "component": "argos",
+      "run": 40323873516,
+      "url": "https://github.com/jabrailkhalil/clickntranslate-components/actions/runs/40323873516",
+      "source_commit": "4aedc00e6c84e44911e26cd7e77c88dce57623a3",
+      "conclusion": "success",
+      "artifact": {
+        "filename": "argos-windows-x64-cp312-runtime.zip",
+        "size": 47762853,
+        "sha256": "893edc601d51acbde41b05a40b695bf37842362cf33087efb49440904c8547a4",
+        "unpacked_size": 139544726
+      },
+      "native_validation": {
+        "first_generation": "1dc568e2f0444f6e930df261ec3c98bc",
+        "artifact_downloads": 5,
+        "additional_update_downloads": 0,
+        "language_addition": "passed",
+        "runtime_update_preserves_directions": "passed",
+        "offline_removal": "passed",
+        "rollback": "passed",
+        "validator_cancellation_preserves_active": "passed",
+        "streaming_translation": "passed",
+        "native_modules_in_parent": [],
+        "runtime_sha256": "893edc601d51acbde41b05a40b695bf37842362cf33087efb49440904c8547a4",
+        "translations": [
+          {
+            "source": "en",
+            "target": "ru",
+            "text": "Hello, world!",
+            "result": "Привет, мир!",
+            "seconds": 1.19
+          },
+          {
+            "source": "ru",
+            "target": "en",
+            "text": "Привет, мир!",
+            "result": "Hello, world!",
+            "seconds": 1.27
+          },
+          {
+            "source": "en",
+            "target": "ar",
+            "text": "Hello, world!",
+            "result": "مرحبا، العالم!",
+            "seconds": 0.84
+          },
+          {
+            "source": "ar",
+            "target": "en",
+            "text": "مرحبا بالعالم!",
+            "result": "Welcome to the world!",
+            "seconds": 0.74
+          },
+          {
+            "source": "ru",
+            "target": "ar",
+            "text": "Привет, мир!",
+            "result": "مرحبا، العالم!",
+            "seconds": 1.05
+          },
+          {
+            "source": "ar",
+            "target": "ru",
+            "text": "مرحبا بالعالم!",
+            "result": "Добро пожаловать в мир!",
+            "seconds": 1.15
+          }
+        ],
+        "seconds": 63.65,
+        "runtime_source": "local candidate",
+        "application_build": false,
+        "dll_runtime": {
+          "msvcp140.dll": "bundled",
+          "msvcp140_1.dll": "bundled",
+          "msvcp140_2.dll": "bundled"
+        }
+      },
+      "native_import_audit": {
+        "binary_count": 70,
+        "required_system_libraries": [
+          "advapi32.dll",
+          "api-ms-win-core-path-l1-1-0.dll",
+          "api-ms-win-core-synch-l1-2-0.dll",
+          "api-ms-win-core-winrt-error-l1-1-0.dll",
+          "api-ms-win-core-winrt-l1-1-0.dll",
+          "api-ms-win-core-winrt-string-l1-1-0.dll",
+          "api-ms-win-crt-conio-l1-1-0.dll",
+          "api-ms-win-crt-convert-l1-1-0.dll",
+          "api-ms-win-crt-environment-l1-1-0.dll",
+          "api-ms-win-crt-filesystem-l1-1-0.dll",
+          "api-ms-win-crt-heap-l1-1-0.dll",
+          "api-ms-win-crt-locale-l1-1-0.dll",
+          "api-ms-win-crt-math-l1-1-0.dll",
+          "api-ms-win-crt-private-l1-1-0.dll",
+          "api-ms-win-crt-process-l1-1-0.dll",
+          "api-ms-win-crt-runtime-l1-1-0.dll",
+          "api-ms-win-crt-stdio-l1-1-0.dll",
+          "api-ms-win-crt-string-l1-1-0.dll",
+          "api-ms-win-crt-time-l1-1-0.dll",
+          "api-ms-win-crt-utility-l1-1-0.dll",
+          "bcrypt.dll",
+          "cabinet.dll",
+          "crypt32.dll",
+          "d3d11.dll",
+          "d3dcompiler_47.dll",
+          "dxgi.dll",
+          "imagehlp.dll",
+          "iphlpapi.dll",
+          "kernel32.dll",
+          "msi.dll",
+          "ole32.dll",
+          "oleaut32.dll",
+          "propsys.dll",
+          "rpcrt4.dll",
+          "user32.dll",
+          "version.dll",
+          "winmm.dll",
+          "wintrust.dll",
+          "ws2_32.dll"
+        ],
+        "unresolved_private_libraries": []
+      },
+      "artifact_download_sha256_verified": true,
+      "publication": "unpublished candidate",
+      "redistribution_review": false,
+      "frozen_application": false,
+      "macos": false,
+      "linux": false
+    }
+  ]
+}
