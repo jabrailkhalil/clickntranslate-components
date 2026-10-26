@@ -20,6 +20,8 @@ Argos Windows has a private-runtime **candidate** and four pinned EN↔RU/EN↔A
 
 New RapidOCR/Argos candidates include pinned Microsoft runtime files and audit native imports instead of depending on the developer's global Visual C++ installation. Candidate locks and CI artifacts do not approve publication: redistribution review and frozen-application checks remain explicit gates. Published runtime assets and the existing catalog are never overwritten by preparation.
 
+Hy-MT Windows has a native **candidate** with a separately authenticated GGUF model, its matching license/document revision, and a curated llama.cpp CPU runner. The manual workflow compares b9048 and b11899 using the same model, verifies loaded private DLL paths and tests update without another model download, rollback, cancellation, invalid GGUF rejection and removal while a worker holds a lease. Candidate preparation does not publish a new model or runtime.
+
 ## Maintenance
 
 Daily automation refreshes short-lived snapshot/timestamp metadata using restricted online keys. Approval of a new catalog requires the author's targets key. Targets approval expires after 90 days and must be renewed by the maintainer; refresh automation fails visibly before it can serve an expired approval.

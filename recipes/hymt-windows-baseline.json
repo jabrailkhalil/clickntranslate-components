@@ -1,0 +1,15 @@
+{
+  "runner": {
+    "tag": "b9048",
+    "url": "https://github.com/ggml-org/llama.cpp/releases/download/b9048/llama-b9048-bin-win-cpu-x64.zip",
+    "sha256": "7412d3b73de94b9d29d3a7f9f971c68f35bac3cc47c1a45fc60b01b962663938",
+    "size": 16038890,
+    "unpacked_size": 48428600
+  },
+  "runner_license": {
+    "url": "https://raw.githubusercontent.com/ggml-org/llama.cpp/b9048/LICENSE",
+    "sha256": "94f29bbed6a22c35b992c5c6ebf0e7c92f13b836b90f36f461c9cf2f0f1d010d",
+    "size": 1078
+  },
+  "revision": 1
+}
