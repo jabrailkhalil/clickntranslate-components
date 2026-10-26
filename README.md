@@ -28,4 +28,6 @@ Daily automation refreshes short-lived snapshot/timestamp metadata using restric
 
 Upstream discovery produces a report; it never silently publishes untested dependencies or models. Runtime recipes must be prepared and tested natively for each OS/architecture. A Python virtual environment copied from a development machine is not a portable runtime.
 
+Discovery reads the prepared recipe pins and watches the Windows CPU `bNNNN` llama.cpp track and the Hy-MT model repository revision. Unrelated stable tags or rolling builds without a Windows CPU archive are not reported as ready. A failed source is shown as unavailable; other source results are retained and the workflow fails visibly, with its partial report attached.
+
 No secrets, user API keys, OCR text, histories or private signing certificates belong in this repository.
