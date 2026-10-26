@@ -1,14 +1,6 @@
 [
   {
-    "profile": "linux-x64",
-    "engine": "rapidocr"
-  },
-  {
-    "profile": "linux-x64",
+    "profile": "macos-x64",
     "engine": "easyocr"
-  },
-  {
-    "profile": "linux-x64",
-    "engine": "argos"
   }
 ]
