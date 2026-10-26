@@ -43,6 +43,10 @@ jobs:
           from prepare_easyocr_catalog import prepare as catalog
           root=Path(os.environ['RUNNER_TEMP'])/'ClicknTranslate-QA/easyocr-candidate'
           runtime, models=root/'prepared', root/'models'
+          # Fixture fonts are separate QA data, never installed in the runtime.
+          fonts=models/'qa-fonts';fonts.mkdir(parents=True)
+          for item in json.loads(Path('components/recipes/easyocr-qa-fonts.json').read_bytes())['artifacts']:
+              ComponentDownloader().artifact(item['url'],fonts/item['filename'],item)
           prepare(runtime,Path('components/recipes/easyocr-windows-x64.json'))
           (models/'archives').mkdir(parents=True)
           source=Path('components/recipes/easyocr-windows-models.json')
