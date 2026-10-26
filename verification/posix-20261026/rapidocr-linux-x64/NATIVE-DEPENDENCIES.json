@@ -1,0 +1,1971 @@
+{
+  "platform": {
+    "os": "linux",
+    "arch": "x86_64",
+    "os_version": "6.8.0",
+    "libc": "glibc",
+    "libc_version": "2.35"
+  },
+  "native_files": [
+    {
+      "path": "python/bin/python3",
+      "dependencies": [
+        {
+          "name": "libpthread.so.0",
+          "resolution": "base ABI"
+        },
+        {
+          "name": "libdl.so.2",
+          "resolution": "base ABI"
+        },
+        {
+          "name": "libutil.so.1",
+          "resolution": "base ABI"
+        },
+        {
+          "name": "libm.so.6",
+          "resolution": "base ABI"
+        },
+        {
+          "name": "librt.so.1",
+          "resolution": "base ABI"
+        },
+        {
+          "name": "libc.so.6",
+          "resolution": "base ABI"
+        }
+      ]
+    },
+    {
+      "path": "python/bin/python3.12",
+      "dependencies": [
+        {
+          "name": "libpthread.so.0",
+          "resolution": "base ABI"
+        },
+        {
+          "name": "libdl.so.2",
+          "resolution": "base ABI"
+        },
+        {
+          "name": "libutil.so.1",
+          "resolution": "base ABI"
+        },
+        {
+          "name": "libm.so.6",
+          "resolution": "base ABI"
+        },
+        {
+          "name": "librt.so.1",
+          "resolution": "base ABI"
+        },
+        {
+          "name": "libc.so.6",
+          "resolution": "base ABI"
+        }
+      ]
+    },
+    {
+      "path": "python/bin/python",
+      "dependencies": [
+        {
+          "name": "libpthread.so.0",
+          "resolution": "base ABI"
+        },
+        {
+          "name": "libdl.so.2",
+          "resolution": "base ABI"
+        },
+        {
+          "name": "libutil.so.1",
+          "resolution": "base ABI"
+        },
+        {
+          "name": "libm.so.6",
+          "resolution": "base ABI"
+        },
+        {
+          "name": "librt.so.1",
+          "resolution": "base ABI"
+        },
+        {
+          "name": "libc.so.6",
+          "resolution": "base ABI"
+        }
+      ]
+    },
+    {
+      "path": "python/lib/libpython3.12.so",
+      "dependencies": [
+        {
+          "name": "libdl.so.2",
+          "resolution": "base ABI"
+        },
+        {
+          "name": "libm.so.6",
+          "resolution": "base ABI"
+        },
+        {
+          "name": "librt.so.1",
+          "resolution": "base ABI"
+        },
+        {
+          "name": "libpthread.so.0",
+          "resolution": "base ABI"
+        },
+        {
+          "name": "libutil.so.1",
+          "resolution": "base ABI"
+        },
+        {
+          "name": "libc.so.6",
+          "resolution": "base ABI"
+        }
+      ]
+    },
+    {
+      "path": "python/lib/libpython3.12.so.1.0",
+      "dependencies": [
+        {
+          "name": "libdl.so.2",
+          "resolution": "base ABI"
+        },
+        {
+          "name": "libm.so.6",
+          "resolution": "base ABI"
+        },
+        {
+          "name": "librt.so.1",
+          "resolution": "base ABI"
+        },
+        {
+          "name": "libpthread.so.0",
+          "resolution": "base ABI"
+        },
+        {
+          "name": "libutil.so.1",
+          "resolution": "base ABI"
+        },
+        {
+          "name": "libc.so.6",
+          "resolution": "base ABI"
+        }
+      ]
+    },
+    {
+      "path": "python/lib/libpython3.so",
+      "dependencies": [
+        {
+          "name": "libpthread.so.0",
+          "resolution": "base ABI"
+        },
+        {
+          "name": "libc.so.6",
+          "resolution": "base ABI"
+        },
+        {
+          "name": "libdl.so.2",
+          "resolution": "base ABI"
+        },
+        {
+          "name": "libm.so.6",
+          "resolution": "base ABI"
+        },
+        {
+          "name": "librt.so.1",
+          "resolution": "base ABI"
+        },
+        {
+          "name": "libutil.so.1",
+          "resolution": "base ABI"
+        }
+      ]
+    },
+    {
+      "path": "python/lib/libz.so.1",
+      "dependencies": [
+        {
+          "name": "libc.so.6",
+          "resolution": "base ABI"
+        }
+      ]
+    },
+    {
+      "path": "python/lib/python3.12/site-packages/yaml/_yaml.cpython-312-x86_64-linux-gnu.so",
+      "dependencies": [
+        {
+          "name": "libpthread.so.0",
+          "resolution": "base ABI"
+        },
+        {
+          "name": "libc.so.6",
+          "resolution": "base ABI"
+        }
+      ]
+    },
+    {
+      "path": "python/lib/python3.12/site-packages/charset_normalizer/md.cpython-312-x86_64-linux-gnu.so",
+      "dependencies": [
+        {
+          "name": "libpthread.so.0",
+          "resolution": "base ABI"
+        },
+        {
+          "name": "libc.so.6",
+          "resolution": "base ABI"
+        }
+      ]
+    },
+    {
+      "path": "python/lib/python3.12/site-packages/charset_normalizer/cd.cpython-312-x86_64-linux-gnu.so",
+      "dependencies": [
+        {
+          "name": "libpthread.so.0",
+          "resolution": "base ABI"
+        },
+        {
+          "name": "libc.so.6",
+          "resolution": "base ABI"
+        }
+      ]
+    },
+    {
+      "path": "python/lib/python3.12/site-packages/bidi/bidi.cpython-312-x86_64-linux-gnu.so",
+      "dependencies": [
+        {
+          "name": "libgcc_s.so.1",
+          "resolution": "base ABI"
+        },
+        {
+          "name": "libpthread.so.0",
+          "resolution": "base ABI"
+        },
+        {
+          "name": "libc.so.6",
+          "resolution": "base ABI"
+        }
+      ]
+    },
+    {
+      "path": "python/lib/python3.12/site-packages/shapely/_geometry_helpers.cpython-312-x86_64-linux-gnu.so",
+      "dependencies": [
+        {
+          "name": "libgeos_c-ac38a227.so.1.20.5",
+          "resolution": "bundled"
+        },
+        {
+          "name": "libc.so.6",
+          "resolution": "base ABI"
+        },
+        {
+          "name": "libgeos-d1e818bb.so.3.14.1",
+          "resolution": "bundled"
+        },
+        {
+          "name": "libstdc++.so.6",
+          "resolution": "base ABI"
+        },
+        {
+          "name": "libm.so.6",
+          "resolution": "base ABI"
+        },
+        {
+          "name": "libgcc_s.so.1",
+          "resolution": "base ABI"
+        }
+      ]
+    },
+    {
+      "path": "python/lib/python3.12/site-packages/shapely/_geos.cpython-312-x86_64-linux-gnu.so",
+      "dependencies": [
+        {
+          "name": "libc.so.6",
+          "resolution": "base ABI"
+        }
+      ]
+    },
+    {
+      "path": "python/lib/python3.12/site-packages/shapely/lib.cpython-312-x86_64-linux-gnu.so",
+      "dependencies": [
+        {
+          "name": "libgeos_c-ac38a227.so.1.20.5",
+          "resolution": "bundled"
+        },
+        {
+          "name": "libc.so.6",
+          "resolution": "base ABI"
+        },
+        {
+          "name": "libgeos-d1e818bb.so.3.14.1",
+          "resolution": "bundled"
+        },
+        {
+          "name": "libstdc++.so.6",
+          "resolution": "base ABI"
+        },
+        {
+          "name": "libm.so.6",
+          "resolution": "base ABI"
+        },
+        {
+          "name": "libgcc_s.so.1",
+          "resolution": "base ABI"
+        }
+      ]
+    },
+    {
+      "path": "python/lib/python3.12/site-packages/opencv_python_headless.libs/libgfortran-83c28eba.so.5.0.0",
+      "dependencies": [
+        {
+          "name": "libquadmath-2284e583.so.0.0.0",
+          "resolution": "bundled"
+        },
+        {
+          "name": "libz.so.1",
+          "resolution": "bundled"
+        },
+        {
+          "name": "libm.so.6",
+          "resolution": "base ABI"
+        },
+        {
+          "name": "libgcc_s.so.1",
+          "resolution": "base ABI"
+        },
+        {
+          "name": "libc.so.6",
+          "resolution": "base ABI"
+        }
+      ]
+    },
+    {
+      "path": "python/lib/python3.12/site-packages/opencv_python_headless.libs/libopenblasp-r0-59ffcd50.3.15.so",
+      "dependencies": [
+        {
+          "name": "libm.so.6",
+          "resolution": "base ABI"
+        },
+        {
+          "name": "libpthread.so.0",
+          "resolution": "base ABI"
+        },
+        {
+          "name": "libgfortran-83c28eba.so.5.0.0",
+          "resolution": "bundled"
+        },
+        {
+          "name": "libc.so.6",
+          "resolution": "base ABI"
+        },
+        {
+          "name": "libquadmath-2284e583.so.0.0.0",
+          "resolution": "bundled"
+        },
+        {
+          "name": "libz.so.1",
+          "resolution": "bundled"
+        },
+        {
+          "name": "libgcc_s.so.1",
+          "resolution": "base ABI"
+        }
+      ]
+    },
+    {
+      "path": "python/lib/python3.12/site-packages/opencv_python_headless.libs/libaom-a0d22147.so.3.14.1",
+      "dependencies": [
+        {
+          "name": "libm.so.6",
+          "resolution": "base ABI"
+        },
+        {
+          "name": "libpthread.so.0",
+          "resolution": "base ABI"
+        },
+        {
+          "name": "libc.so.6",
+          "resolution": "base ABI"
+        }
+      ]
+    },
+    {
+      "path": "python/lib/python3.12/site-packages/opencv_python_headless.libs/libswresample-2dfded3b.so.6.3.101",
+      "dependencies": [
+        {
+          "name": "libavutil-befbbc48.so.60.26.101",
+          "resolution": "bundled"
+        },
+        {
+          "name": "libm.so.6",
+          "resolution": "base ABI"
+        },
+        {
+          "name": "libc.so.6",
+          "resolution": "base ABI"
+        },
+        {
+          "name": "libdrm-b0291a67.so.2.4.0",
+          "resolution": "bundled"
+        },
+        {
+          "name": "libcrypto-5409cd36.so.1.1.1k",
+          "resolution": "bundled"
+        },
+        {
+          "name": "libpthread.so.0",
+          "resolution": "base ABI"
+        },
+        {
+          "name": "libz.so.1",
+          "resolution": "bundled"
+        },
+        {
+          "name": "libdl.so.2",
+          "resolution": "base ABI"
+        }
+      ]
+    },
+    {
+      "path": "python/lib/python3.12/site-packages/opencv_python_headless.libs/libcrypto-5409cd36.so.1.1.1k",
+      "dependencies": [
+        {
+          "name": "libz.so.1",
+          "resolution": "bundled"
+        },
+        {
+          "name": "libdl.so.2",
+          "resolution": "base ABI"
+        },
+        {
+          "name": "libpthread.so.0",
+          "resolution": "base ABI"
+        },
+        {
+          "name": "libc.so.6",
+          "resolution": "base ABI"
+        }
+      ]
+    },
+    {
+      "path": "python/lib/python3.12/site-packages/opencv_python_headless.libs/libdrm-b0291a67.so.2.4.0",
+      "dependencies": [
+        {
+          "name": "libc.so.6",
+          "resolution": "base ABI"
+        }
+      ]
+    },
+    {
+      "path": "python/lib/python3.12/site-packages/opencv_python_headless.libs/libavif-43e630fc.so.16.4.2",
+      "dependencies": [
+        {
+          "name": "libaom-a0d22147.so.3.14.1",
+          "resolution": "bundled"
+        },
+        {
+          "name": "libstdc++.so.6",
+          "resolution": "base ABI"
+        },
+        {
+          "name": "libm.so.6",
+          "resolution": "base ABI"
+        },
+        {
+          "name": "libgcc_s.so.1",
+          "resolution": "base ABI"
+        },
+        {
+          "name": "libpthread.so.0",
+          "resolution": "base ABI"
+        },
+        {
+          "name": "libc.so.6",
+          "resolution": "base ABI"
+        }
+      ]
+    },
+    {
+      "path": "python/lib/python3.12/site-packages/opencv_python_headless.libs/libpng16-529cb57a.so.16.58.0",
+      "dependencies": [
+        {
+          "name": "libz.so.1",
+          "resolution": "bundled"
+        },
+        {
+          "name": "libm.so.6",
+          "resolution": "base ABI"
+        },
+        {
+          "name": "libc.so.6",
+          "resolution": "base ABI"
+        }
+      ]
+    },
+    {
+      "path": "python/lib/python3.12/site-packages/opencv_python_headless.libs/libavutil-befbbc48.so.60.26.101",
+      "dependencies": [
+        {
+          "name": "libm.so.6",
+          "resolution": "base ABI"
+        },
+        {
+          "name": "libdrm-b0291a67.so.2.4.0",
+          "resolution": "bundled"
+        },
+        {
+          "name": "libcrypto-5409cd36.so.1.1.1k",
+          "resolution": "bundled"
+        },
+        {
+          "name": "libpthread.so.0",
+          "resolution": "base ABI"
+        },
+        {
+          "name": "libc.so.6",
+          "resolution": "base ABI"
+        },
+        {
+          "name": "libz.so.1",
+          "resolution": "bundled"
+        },
+        {
+          "name": "libdl.so.2",
+          "resolution": "base ABI"
+        }
+      ]
+    },
+    {
+      "path": "python/lib/python3.12/site-packages/opencv_python_headless.libs/libswscale-fe215b0b.so.9.5.101",
+      "dependencies": [
+        {
+          "name": "libavutil-befbbc48.so.60.26.101",
+          "resolution": "bundled"
+        },
+        {
+          "name": "libm.so.6",
+          "resolution": "base ABI"
+        },
+        {
+          "name": "libpthread.so.0",
+          "resolution": "base ABI"
+        },
+        {
+          "name": "libc.so.6",
+          "resolution": "base ABI"
+        },
+        {
+          "name": "libdrm-b0291a67.so.2.4.0",
+          "resolution": "bundled"
+        },
+        {
+          "name": "libcrypto-5409cd36.so.1.1.1k",
+          "resolution": "bundled"
+        },
+        {
+          "name": "libz.so.1",
+          "resolution": "bundled"
+        },
+        {
+          "name": "libdl.so.2",
+          "resolution": "base ABI"
+        }
+      ]
+    },
+    {
+      "path": "python/lib/python3.12/site-packages/opencv_python_headless.libs/libvpx-4fb239ff.so.11.0.1",
+      "dependencies": [
+        {
+          "name": "libpthread.so.0",
+          "resolution": "base ABI"
+        },
+        {
+          "name": "libstdc++.so.6",
+          "resolution": "base ABI"
+        },
+        {
+          "name": "libm.so.6",
+          "resolution": "base ABI"
+        },
+        {
+          "name": "libgcc_s.so.1",
+          "resolution": "base ABI"
+        },
+        {
+          "name": "libc.so.6",
+          "resolution": "base ABI"
+        }
+      ]
+    },
+    {
+      "path": "python/lib/python3.12/site-packages/opencv_python_headless.libs/libssl-81259c47.so.1.1.1k",
+      "dependencies": [
+        {
+          "name": "libcrypto-5409cd36.so.1.1.1k",
+          "resolution": "bundled"
+        },
+        {
+          "name": "libz.so.1",
+          "resolution": "bundled"
+        },
+        {
+          "name": "libdl.so.2",
+          "resolution": "base ABI"
+        },
+        {
+          "name": "libpthread.so.0",
+          "resolution": "base ABI"
+        },
+        {
+          "name": "libc.so.6",
+          "resolution": "base ABI"
+        }
+      ]
+    },
+    {
+      "path": "python/lib/python3.12/site-packages/opencv_python_headless.libs/libquadmath-2284e583.so.0.0.0",
+      "dependencies": [
+        {
+          "name": "libm.so.6",
+          "resolution": "base ABI"
+        },
+        {
+          "name": "libc.so.6",
+          "resolution": "base ABI"
+        }
+      ]
+    },
+    {
+      "path": "python/lib/python3.12/site-packages/opencv_python_headless.libs/libavformat-4762a711.so.62.12.101",
+      "dependencies": [
+        {
+          "name": "libavcodec-c4204469.so.62.28.101",
+          "resolution": "bundled"
+        },
+        {
+          "name": "libavutil-befbbc48.so.60.26.101",
+          "resolution": "bundled"
+        },
+        {
+          "name": "libm.so.6",
+          "resolution": "base ABI"
+        },
+        {
+          "name": "libz.so.1",
+          "resolution": "bundled"
+        },
+        {
+          "name": "libssl-81259c47.so.1.1.1k",
+          "resolution": "bundled"
+        },
+        {
+          "name": "libcrypto-5409cd36.so.1.1.1k",
+          "resolution": "bundled"
+        },
+        {
+          "name": "libpthread.so.0",
+          "resolution": "base ABI"
+        },
+        {
+          "name": "libc.so.6",
+          "resolution": "base ABI"
+        },
+        {
+          "name": "libswresample-2dfded3b.so.6.3.101",
+          "resolution": "bundled"
+        },
+        {
+          "name": "libvpx-4fb239ff.so.11.0.1",
+          "resolution": "bundled"
+        },
+        {
+          "name": "libdrm-b0291a67.so.2.4.0",
+          "resolution": "bundled"
+        },
+        {
+          "name": "libdl.so.2",
+          "resolution": "base ABI"
+        },
+        {
+          "name": "libstdc++.so.6",
+          "resolution": "base ABI"
+        },
+        {
+          "name": "libgcc_s.so.1",
+          "resolution": "base ABI"
+        }
+      ]
+    },
+    {
+      "path": "python/lib/python3.12/site-packages/opencv_python_headless.libs/libavcodec-c4204469.so.62.28.101",
+      "dependencies": [
+        {
+          "name": "libswresample-2dfded3b.so.6.3.101",
+          "resolution": "bundled"
+        },
+        {
+          "name": "libavutil-befbbc48.so.60.26.101",
+          "resolution": "bundled"
+        },
+        {
+          "name": "libvpx-4fb239ff.so.11.0.1",
+          "resolution": "bundled"
+        },
+        {
+          "name": "libm.so.6",
+          "resolution": "base ABI"
+        },
+        {
+          "name": "libz.so.1",
+          "resolution": "bundled"
+        },
+        {
+          "name": "libpthread.so.0",
+          "resolution": "base ABI"
+        },
+        {
+          "name": "libc.so.6",
+          "resolution": "base ABI"
+        },
+        {
+          "name": "libdrm-b0291a67.so.2.4.0",
+          "resolution": "bundled"
+        },
+        {
+          "name": "libcrypto-5409cd36.so.1.1.1k",
+          "resolution": "bundled"
+        },
+        {
+          "name": "libstdc++.so.6",
+          "resolution": "base ABI"
+        },
+        {
+          "name": "libgcc_s.so.1",
+          "resolution": "base ABI"
+        },
+        {
+          "name": "libdl.so.2",
+          "resolution": "base ABI"
+        }
+      ]
+    },
+    {
+      "path": "python/lib/python3.12/site-packages/pyclipper/_pyclipper.cpython-312-x86_64-linux-gnu.so",
+      "dependencies": [
+        {
+          "name": "libstdc++.so.6",
+          "resolution": "base ABI"
+        },
+        {
+          "name": "libm.so.6",
+          "resolution": "base ABI"
+        },
+        {
+          "name": "libgcc_s.so.1",
+          "resolution": "base ABI"
+        },
+        {
+          "name": "libpthread.so.0",
+          "resolution": "base ABI"
+        },
+        {
+          "name": "libc.so.6",
+          "resolution": "base ABI"
+        }
+      ]
+    },
+    {
+      "path": "python/lib/python3.12/site-packages/numpy.libs/libgfortran-83c28eba-468e71e5.so.5.0.0",
+      "dependencies": [
+        {
+          "name": "libquadmath-2284e583-a9307bba.so.0.0.0",
+          "resolution": "bundled"
+        },
+        {
+          "name": "libz.so.1",
+          "resolution": "bundled"
+        },
+        {
+          "name": "libm.so.6",
+          "resolution": "base ABI"
+        },
+        {
+          "name": "libgcc_s.so.1",
+          "resolution": "base ABI"
+        },
+        {
+          "name": "libc.so.6",
+          "resolution": "base ABI"
+        }
+      ]
+    },
+    {
+      "path": "python/lib/python3.12/site-packages/numpy.libs/libscipy_openblas64_-f48b354e.so",
+      "dependencies": [
+        {
+          "name": "libm.so.6",
+          "resolution": "base ABI"
+        },
+        {
+          "name": "libpthread.so.0",
+          "resolution": "base ABI"
+        },
+        {
+          "name": "libgfortran-83c28eba-468e71e5.so.5.0.0",
+          "resolution": "bundled"
+        },
+        {
+          "name": "libc.so.6",
+          "resolution": "base ABI"
+        },
+        {
+          "name": "libquadmath-2284e583-a9307bba.so.0.0.0",
+          "resolution": "bundled"
+        },
+        {
+          "name": "libz.so.1",
+          "resolution": "bundled"
+        },
+        {
+          "name": "libgcc_s.so.1",
+          "resolution": "base ABI"
+        }
+      ]
+    },
+    {
+      "path": "python/lib/python3.12/site-packages/numpy.libs/libquadmath-2284e583-a9307bba.so.0.0.0",
+      "dependencies": [
+        {
+          "name": "libm.so.6",
+          "resolution": "base ABI"
+        },
+        {
+          "name": "libc.so.6",
+          "resolution": "base ABI"
+        }
+      ]
+    },
+    {
+      "path": "python/lib/python3.12/site-packages/pillow.libs/libwebpmux-8fb1c9f6.so.3.1.2",
+      "dependencies": [
+        {
+          "name": "libm.so.6",
+          "resolution": "base ABI"
+        },
+        {
+          "name": "libwebp-51b0b3f7.so.7.2.0",
+          "resolution": "bundled"
+        },
+        {
+          "name": "libpthread.so.0",
+          "resolution": "base ABI"
+        },
+        {
+          "name": "libc.so.6",
+          "resolution": "base ABI"
+        },
+        {
+          "name": "libsharpyuv-0066295b.so.0.1.2",
+          "resolution": "bundled"
+        }
+      ]
+    },
+    {
+      "path": "python/lib/python3.12/site-packages/pillow.libs/libxcb-ad31f5a3.so.1.1.0",
+      "dependencies": [
+        {
+          "name": "libXau-154567c4.so.6.0.0",
+          "resolution": "bundled"
+        },
+        {
+          "name": "libc.so.6",
+          "resolution": "base ABI"
+        }
+      ]
+    },
+    {
+      "path": "python/lib/python3.12/site-packages/pillow.libs/libopenjp2-b07f72ad.so.2.5.4",
+      "dependencies": [
+        {
+          "name": "libm.so.6",
+          "resolution": "base ABI"
+        },
+        {
+          "name": "libpthread.so.0",
+          "resolution": "base ABI"
+        },
+        {
+          "name": "libc.so.6",
+          "resolution": "base ABI"
+        }
+      ]
+    },
+    {
+      "path": "python/lib/python3.12/site-packages/pillow.libs/libwebpdemux-9fe2abcc.so.2.0.17",
+      "dependencies": [
+        {
+          "name": "libwebp-51b0b3f7.so.7.2.0",
+          "resolution": "bundled"
+        },
+        {
+          "name": "libpthread.so.0",
+          "resolution": "base ABI"
+        },
+        {
+          "name": "libc.so.6",
+          "resolution": "base ABI"
+        },
+        {
+          "name": "libsharpyuv-0066295b.so.0.1.2",
+          "resolution": "bundled"
+        },
+        {
+          "name": "libm.so.6",
+          "resolution": "base ABI"
+        }
+      ]
+    },
+    {
+      "path": "python/lib/python3.12/site-packages/pillow.libs/libzstd-44be1190.so.1.5.7",
+      "dependencies": [
+        {
+          "name": "libpthread.so.0",
+          "resolution": "base ABI"
+        },
+        {
+          "name": "libc.so.6",
+          "resolution": "base ABI"
+        }
+      ]
+    },
+    {
+      "path": "python/lib/python3.12/site-packages/pillow.libs/libharfbuzz-172d1f63.so.0.61421.0",
+      "dependencies": [
+        {
+          "name": "libm.so.6",
+          "resolution": "base ABI"
+        },
+        {
+          "name": "libfreetype-9fc94c80.so.6.20.6",
+          "resolution": "bundled"
+        },
+        {
+          "name": "libpthread.so.0",
+          "resolution": "base ABI"
+        },
+        {
+          "name": "libc.so.6",
+          "resolution": "base ABI"
+        },
+        {
+          "name": "libpng16-abb096d5.so.16.58.0",
+          "resolution": "bundled"
+        },
+        {
+          "name": "libz.so.1",
+          "resolution": "bundled"
+        },
+        {
+          "name": "libdl.so.2",
+          "resolution": "base ABI"
+        },
+        {
+          "name": "libbrotlidec-7e5462ba.so.1.2.0",
+          "resolution": "bundled"
+        },
+        {
+          "name": "libbrotlicommon-53534446.so.1.2.0",
+          "resolution": "bundled"
+        }
+      ]
+    },
+    {
+      "path": "python/lib/python3.12/site-packages/pillow.libs/libwebp-51b0b3f7.so.7.2.0",
+      "dependencies": [
+        {
+          "name": "libsharpyuv-0066295b.so.0.1.2",
+          "resolution": "bundled"
+        },
+        {
+          "name": "libm.so.6",
+          "resolution": "base ABI"
+        },
+        {
+          "name": "libpthread.so.0",
+          "resolution": "base ABI"
+        },
+        {
+          "name": "libc.so.6",
+          "resolution": "base ABI"
+        }
+      ]
+    },
+    {
+      "path": "python/lib/python3.12/site-packages/pillow.libs/libXau-154567c4.so.6.0.0",
+      "dependencies": [
+        {
+          "name": "libc.so.6",
+          "resolution": "base ABI"
+        }
+      ]
+    },
+    {
+      "path": "python/lib/python3.12/site-packages/pillow.libs/libjpeg-31e2ca52.so.62.4.0",
+      "dependencies": [
+        {
+          "name": "libc.so.6",
+          "resolution": "base ABI"
+        }
+      ]
+    },
+    {
+      "path": "python/lib/python3.12/site-packages/pillow.libs/libbrotlidec-7e5462ba.so.1.2.0",
+      "dependencies": [
+        {
+          "name": "libm.so.6",
+          "resolution": "base ABI"
+        },
+        {
+          "name": "libbrotlicommon-53534446.so.1.2.0",
+          "resolution": "bundled"
+        },
+        {
+          "name": "libc.so.6",
+          "resolution": "base ABI"
+        }
+      ]
+    },
+    {
+      "path": "python/lib/python3.12/site-packages/pillow.libs/libsharpyuv-0066295b.so.0.1.2",
+      "dependencies": [
+        {
+          "name": "libm.so.6",
+          "resolution": "base ABI"
+        },
+        {
+          "name": "libpthread.so.0",
+          "resolution": "base ABI"
+        },
+        {
+          "name": "libc.so.6",
+          "resolution": "base ABI"
+        }
+      ]
+    },
+    {
+      "path": "python/lib/python3.12/site-packages/pillow.libs/libtiff-fc87e79d.so.6.2.0",
+      "dependencies": [
+        {
+          "name": "libzstd-44be1190.so.1.5.7",
+          "resolution": "bundled"
+        },
+        {
+          "name": "liblzma-2be87c3e.so.5.8.3",
+          "resolution": "bundled"
+        },
+        {
+          "name": "libjpeg-31e2ca52.so.62.4.0",
+          "resolution": "bundled"
+        },
+        {
+          "name": "libz.so.1",
+          "resolution": "bundled"
+        },
+        {
+          "name": "libm.so.6",
+          "resolution": "base ABI"
+        },
+        {
+          "name": "libpthread.so.0",
+          "resolution": "base ABI"
+        },
+        {
+          "name": "libc.so.6",
+          "resolution": "base ABI"
+        }
+      ]
+    },
+    {
+      "path": "python/lib/python3.12/site-packages/pillow.libs/libfreetype-9fc94c80.so.6.20.6",
+      "dependencies": [
+        {
+          "name": "libpng16-abb096d5.so.16.58.0",
+          "resolution": "bundled"
+        },
+        {
+          "name": "libz.so.1",
+          "resolution": "bundled"
+        },
+        {
+          "name": "libm.so.6",
+          "resolution": "base ABI"
+        },
+        {
+          "name": "libdl.so.2",
+          "resolution": "base ABI"
+        },
+        {
+          "name": "libbrotlidec-7e5462ba.so.1.2.0",
+          "resolution": "bundled"
+        },
+        {
+          "name": "libpthread.so.0",
+          "resolution": "base ABI"
+        },
+        {
+          "name": "libc.so.6",
+          "resolution": "base ABI"
+        },
+        {
+          "name": "libbrotlicommon-53534446.so.1.2.0",
+          "resolution": "bundled"
+        }
+      ]
+    },
+    {
+      "path": "python/lib/python3.12/site-packages/pillow.libs/libbrotlicommon-53534446.so.1.2.0",
+      "dependencies": [
+        {
+          "name": "libm.so.6",
+          "resolution": "base ABI"
+        },
+        {
+          "name": "libc.so.6",
+          "resolution": "base ABI"
+        }
+      ]
+    },
+    {
+      "path": "python/lib/python3.12/site-packages/pillow.libs/libpng16-abb096d5.so.16.58.0",
+      "dependencies": [
+        {
+          "name": "libz.so.1",
+          "resolution": "bundled"
+        },
+        {
+          "name": "libm.so.6",
+          "resolution": "base ABI"
+        },
+        {
+          "name": "libc.so.6",
+          "resolution": "base ABI"
+        }
+      ]
+    },
+    {
+      "path": "python/lib/python3.12/site-packages/pillow.libs/liblcms2-dade1fbf.so.2.0.19",
+      "dependencies": [
+        {
+          "name": "libm.so.6",
+          "resolution": "base ABI"
+        },
+        {
+          "name": "libpthread.so.0",
+          "resolution": "base ABI"
+        },
+        {
+          "name": "libc.so.6",
+          "resolution": "base ABI"
+        }
+      ]
+    },
+    {
+      "path": "python/lib/python3.12/site-packages/pillow.libs/liblzma-2be87c3e.so.5.8.3",
+      "dependencies": [
+        {
+          "name": "libpthread.so.0",
+          "resolution": "base ABI"
+        },
+        {
+          "name": "libc.so.6",
+          "resolution": "base ABI"
+        }
+      ]
+    },
+    {
+      "path": "python/lib/python3.12/site-packages/pillow.libs/libavif-8a7f9d56.so.16.4.2",
+      "dependencies": [
+        {
+          "name": "libdl.so.2",
+          "resolution": "base ABI"
+        },
+        {
+          "name": "libstdc++.so.6",
+          "resolution": "base ABI"
+        },
+        {
+          "name": "libm.so.6",
+          "resolution": "base ABI"
+        },
+        {
+          "name": "libgcc_s.so.1",
+          "resolution": "base ABI"
+        },
+        {
+          "name": "libpthread.so.0",
+          "resolution": "base ABI"
+        },
+        {
+          "name": "libc.so.6",
+          "resolution": "base ABI"
+        }
+      ]
+    },
+    {
+      "path": "python/lib/python3.12/site-packages/cv2/cv2.abi3.so",
+      "dependencies": [
+        {
+          "name": "libopenblasp-r0-59ffcd50.3.15.so",
+          "resolution": "bundled"
+        },
+        {
+          "name": "libavif-43e630fc.so.16.4.2",
+          "resolution": "bundled"
+        },
+        {
+          "name": "libpng16-529cb57a.so.16.58.0",
+          "resolution": "bundled"
+        },
+        {
+          "name": "libz.so.1",
+          "resolution": "bundled"
+        },
+        {
+          "name": "libavcodec-c4204469.so.62.28.101",
+          "resolution": "bundled"
+        },
+        {
+          "name": "libavformat-4762a711.so.62.12.101",
+          "resolution": "bundled"
+        },
+        {
+          "name": "libavutil-befbbc48.so.60.26.101",
+          "resolution": "bundled"
+        },
+        {
+          "name": "libswscale-fe215b0b.so.9.5.101",
+          "resolution": "bundled"
+        },
+        {
+          "name": "libdl.so.2",
+          "resolution": "base ABI"
+        },
+        {
+          "name": "libpthread.so.0",
+          "resolution": "base ABI"
+        },
+        {
+          "name": "libstdc++.so.6",
+          "resolution": "base ABI"
+        },
+        {
+          "name": "libm.so.6",
+          "resolution": "base ABI"
+        },
+        {
+          "name": "libgcc_s.so.1",
+          "resolution": "base ABI"
+        },
+        {
+          "name": "libc.so.6",
+          "resolution": "base ABI"
+        },
+        {
+          "name": "libgfortran-83c28eba.so.5.0.0",
+          "resolution": "bundled"
+        },
+        {
+          "name": "libaom-a0d22147.so.3.14.1",
+          "resolution": "bundled"
+        },
+        {
+          "name": "libswresample-2dfded3b.so.6.3.101",
+          "resolution": "bundled"
+        },
+        {
+          "name": "libvpx-4fb239ff.so.11.0.1",
+          "resolution": "bundled"
+        },
+        {
+          "name": "libssl-81259c47.so.1.1.1k",
+          "resolution": "bundled"
+        },
+        {
+          "name": "libcrypto-5409cd36.so.1.1.1k",
+          "resolution": "bundled"
+        },
+        {
+          "name": "libdrm-b0291a67.so.2.4.0",
+          "resolution": "bundled"
+        },
+        {
+          "name": "libquadmath-2284e583.so.0.0.0",
+          "resolution": "bundled"
+        }
+      ]
+    },
+    {
+      "path": "python/lib/python3.12/site-packages/shapely.libs/libgeos_c-ac38a227.so.1.20.5",
+      "dependencies": [
+        {
+          "name": "libgeos-d1e818bb.so.3.14.1",
+          "resolution": "bundled"
+        },
+        {
+          "name": "libstdc++.so.6",
+          "resolution": "base ABI"
+        },
+        {
+          "name": "libm.so.6",
+          "resolution": "base ABI"
+        },
+        {
+          "name": "libgcc_s.so.1",
+          "resolution": "base ABI"
+        },
+        {
+          "name": "libc.so.6",
+          "resolution": "base ABI"
+        }
+      ]
+    },
+    {
+      "path": "python/lib/python3.12/site-packages/shapely.libs/libgeos-d1e818bb.so.3.14.1",
+      "dependencies": [
+        {
+          "name": "libstdc++.so.6",
+          "resolution": "base ABI"
+        },
+        {
+          "name": "libm.so.6",
+          "resolution": "base ABI"
+        },
+        {
+          "name": "libgcc_s.so.1",
+          "resolution": "base ABI"
+        },
+        {
+          "name": "libc.so.6",
+          "resolution": "base ABI"
+        }
+      ]
+    },
+    {
+      "path": "python/lib/python3.12/site-packages/PIL/_imaging.cpython-312-x86_64-linux-gnu.so",
+      "dependencies": [
+        {
+          "name": "libtiff-fc87e79d.so.6.2.0",
+          "resolution": "bundled"
+        },
+        {
+          "name": "libjpeg-31e2ca52.so.62.4.0",
+          "resolution": "bundled"
+        },
+        {
+          "name": "libopenjp2-b07f72ad.so.2.5.4",
+          "resolution": "bundled"
+        },
+        {
+          "name": "libz.so.1",
+          "resolution": "bundled"
+        },
+        {
+          "name": "libxcb-ad31f5a3.so.1.1.0",
+          "resolution": "bundled"
+        },
+        {
+          "name": "libpthread.so.0",
+          "resolution": "base ABI"
+        },
+        {
+          "name": "libc.so.6",
+          "resolution": "base ABI"
+        },
+        {
+          "name": "libzstd-44be1190.so.1.5.7",
+          "resolution": "bundled"
+        },
+        {
+          "name": "liblzma-2be87c3e.so.5.8.3",
+          "resolution": "bundled"
+        },
+        {
+          "name": "libm.so.6",
+          "resolution": "base ABI"
+        },
+        {
+          "name": "libXau-154567c4.so.6.0.0",
+          "resolution": "bundled"
+        }
+      ]
+    },
+    {
+      "path": "python/lib/python3.12/site-packages/PIL/_imagingtk.cpython-312-x86_64-linux-gnu.so",
+      "dependencies": [
+        {
+          "name": "libpthread.so.0",
+          "resolution": "base ABI"
+        },
+        {
+          "name": "libc.so.6",
+          "resolution": "base ABI"
+        }
+      ]
+    },
+    {
+      "path": "python/lib/python3.12/site-packages/PIL/_imagingcms.cpython-312-x86_64-linux-gnu.so",
+      "dependencies": [
+        {
+          "name": "liblcms2-dade1fbf.so.2.0.19",
+          "resolution": "bundled"
+        },
+        {
+          "name": "libpthread.so.0",
+          "resolution": "base ABI"
+        },
+        {
+          "name": "libc.so.6",
+          "resolution": "base ABI"
+        },
+        {
+          "name": "libm.so.6",
+          "resolution": "base ABI"
+        }
+      ]
+    },
+    {
+      "path": "python/lib/python3.12/site-packages/PIL/_imagingft.cpython-312-x86_64-linux-gnu.so",
+      "dependencies": [
+        {
+          "name": "libfreetype-9fc94c80.so.6.20.6",
+          "resolution": "bundled"
+        },
+        {
+          "name": "libharfbuzz-172d1f63.so.0.61421.0",
+          "resolution": "bundled"
+        },
+        {
+          "name": "libpthread.so.0",
+          "resolution": "base ABI"
+        },
+        {
+          "name": "libc.so.6",
+          "resolution": "base ABI"
+        },
+        {
+          "name": "libpng16-abb096d5.so.16.58.0",
+          "resolution": "bundled"
+        },
+        {
+          "name": "libz.so.1",
+          "resolution": "bundled"
+        },
+        {
+          "name": "libm.so.6",
+          "resolution": "base ABI"
+        },
+        {
+          "name": "libdl.so.2",
+          "resolution": "base ABI"
+        },
+        {
+          "name": "libbrotlidec-7e5462ba.so.1.2.0",
+          "resolution": "bundled"
+        },
+        {
+          "name": "libbrotlicommon-53534446.so.1.2.0",
+          "resolution": "bundled"
+        }
+      ]
+    },
+    {
+      "path": "python/lib/python3.12/site-packages/PIL/_imagingmorph.cpython-312-x86_64-linux-gnu.so",
+      "dependencies": [
+        {
+          "name": "libpthread.so.0",
+          "resolution": "base ABI"
+        },
+        {
+          "name": "libc.so.6",
+          "resolution": "base ABI"
+        }
+      ]
+    },
+    {
+      "path": "python/lib/python3.12/site-packages/PIL/_imagingmath.cpython-312-x86_64-linux-gnu.so",
+      "dependencies": [
+        {
+          "name": "libm.so.6",
+          "resolution": "base ABI"
+        },
+        {
+          "name": "libpthread.so.0",
+          "resolution": "base ABI"
+        },
+        {
+          "name": "libc.so.6",
+          "resolution": "base ABI"
+        }
+      ]
+    },
+    {
+      "path": "python/lib/python3.12/site-packages/PIL/_webp.cpython-312-x86_64-linux-gnu.so",
+      "dependencies": [
+        {
+          "name": "libwebp-51b0b3f7.so.7.2.0",
+          "resolution": "bundled"
+        },
+        {
+          "name": "libwebpmux-8fb1c9f6.so.3.1.2",
+          "resolution": "bundled"
+        },
+        {
+          "name": "libwebpdemux-9fe2abcc.so.2.0.17",
+          "resolution": "bundled"
+        },
+        {
+          "name": "libpthread.so.0",
+          "resolution": "base ABI"
+        },
+        {
+          "name": "libc.so.6",
+          "resolution": "base ABI"
+        },
+        {
+          "name": "libsharpyuv-0066295b.so.0.1.2",
+          "resolution": "bundled"
+        },
+        {
+          "name": "libm.so.6",
+          "resolution": "base ABI"
+        }
+      ]
+    },
+    {
+      "path": "python/lib/python3.12/site-packages/PIL/_avif.cpython-312-x86_64-linux-gnu.so",
+      "dependencies": [
+        {
+          "name": "libavif-8a7f9d56.so.16.4.2",
+          "resolution": "bundled"
+        },
+        {
+          "name": "libpthread.so.0",
+          "resolution": "base ABI"
+        },
+        {
+          "name": "libc.so.6",
+          "resolution": "base ABI"
+        },
+        {
+          "name": "libdl.so.2",
+          "resolution": "base ABI"
+        },
+        {
+          "name": "libstdc++.so.6",
+          "resolution": "base ABI"
+        },
+        {
+          "name": "libm.so.6",
+          "resolution": "base ABI"
+        },
+        {
+          "name": "libgcc_s.so.1",
+          "resolution": "base ABI"
+        }
+      ]
+    },
+    {
+      "path": "python/lib/python3.12/site-packages/google/_upb/_message.abi3.so",
+      "dependencies": [
+        {
+          "name": "libstdc++.so.6",
+          "resolution": "base ABI"
+        },
+        {
+          "name": "libm.so.6",
+          "resolution": "base ABI"
+        },
+        {
+          "name": "libc.so.6",
+          "resolution": "base ABI"
+        },
+        {
+          "name": "libgcc_s.so.1",
+          "resolution": "base ABI"
+        }
+      ]
+    },
+    {
+      "path": "python/lib/python3.12/site-packages/onnxruntime/capi/onnxruntime_pybind11_state.cpython-312-x86_64-linux-gnu.so",
+      "dependencies": [
+        {
+          "name": "libdl.so.2",
+          "resolution": "base ABI"
+        },
+        {
+          "name": "librt.so.1",
+          "resolution": "base ABI"
+        },
+        {
+          "name": "libpthread.so.0",
+          "resolution": "base ABI"
+        },
+        {
+          "name": "libstdc++.so.6",
+          "resolution": "base ABI"
+        },
+        {
+          "name": "libm.so.6",
+          "resolution": "base ABI"
+        },
+        {
+          "name": "libgcc_s.so.1",
+          "resolution": "base ABI"
+        },
+        {
+          "name": "libc.so.6",
+          "resolution": "base ABI"
+        }
+      ]
+    },
+    {
+      "path": "python/lib/python3.12/site-packages/onnxruntime/capi/libonnxruntime_providers_shared.so",
+      "dependencies": [
+        {
+          "name": "libstdc++.so.6",
+          "resolution": "base ABI"
+        },
+        {
+          "name": "libm.so.6",
+          "resolution": "base ABI"
+        },
+        {
+          "name": "libgcc_s.so.1",
+          "resolution": "base ABI"
+        },
+        {
+          "name": "libc.so.6",
+          "resolution": "base ABI"
+        }
+      ]
+    },
+    {
+      "path": "python/lib/python3.12/site-packages/onnxruntime/capi/libonnxruntime.so.1.30.0",
+      "dependencies": [
+        {
+          "name": "libdl.so.2",
+          "resolution": "base ABI"
+        },
+        {
+          "name": "librt.so.1",
+          "resolution": "base ABI"
+        },
+        {
+          "name": "libpthread.so.0",
+          "resolution": "base ABI"
+        },
+        {
+          "name": "libstdc++.so.6",
+          "resolution": "base ABI"
+        },
+        {
+          "name": "libm.so.6",
+          "resolution": "base ABI"
+        },
+        {
+          "name": "libgcc_s.so.1",
+          "resolution": "base ABI"
+        },
+        {
+          "name": "libc.so.6",
+          "resolution": "base ABI"
+        }
+      ]
+    },
+    {
+      "path": "python/lib/python3.12/site-packages/numpy/random/mtrand.cpython-312-x86_64-linux-gnu.so",
+      "dependencies": [
+        {
+          "name": "libm.so.6",
+          "resolution": "base ABI"
+        },
+        {
+          "name": "libc.so.6",
+          "resolution": "base ABI"
+        }
+      ]
+    },
+    {
+      "path": "python/lib/python3.12/site-packages/numpy/random/_common.cpython-312-x86_64-linux-gnu.so",
+      "dependencies": [
+        {
+          "name": "libc.so.6",
+          "resolution": "base ABI"
+        }
+      ]
+    },
+    {
+      "path": "python/lib/python3.12/site-packages/numpy/random/_generator.cpython-312-x86_64-linux-gnu.so",
+      "dependencies": [
+        {
+          "name": "libm.so.6",
+          "resolution": "base ABI"
+        },
+        {
+          "name": "libc.so.6",
+          "resolution": "base ABI"
+        }
+      ]
+    },
+    {
+      "path": "python/lib/python3.12/site-packages/numpy/random/_sfc64.cpython-312-x86_64-linux-gnu.so",
+      "dependencies": [
+        {
+          "name": "libc.so.6",
+          "resolution": "base ABI"
+        }
+      ]
+    },
+    {
+      "path": "python/lib/python3.12/site-packages/numpy/random/_philox.cpython-312-x86_64-linux-gnu.so",
+      "dependencies": [
+        {
+          "name": "libc.so.6",
+          "resolution": "base ABI"
+        }
+      ]
+    },
+    {
+      "path": "python/lib/python3.12/site-packages/numpy/random/_mt19937.cpython-312-x86_64-linux-gnu.so",
+      "dependencies": [
+        {
+          "name": "libc.so.6",
+          "resolution": "base ABI"
+        }
+      ]
+    },
+    {
+      "path": "python/lib/python3.12/site-packages/numpy/random/bit_generator.cpython-312-x86_64-linux-gnu.so",
+      "dependencies": [
+        {
+          "name": "libc.so.6",
+          "resolution": "base ABI"
+        }
+      ]
+    },
+    {
+      "path": "python/lib/python3.12/site-packages/numpy/random/_pcg64.cpython-312-x86_64-linux-gnu.so",
+      "dependencies": [
+        {
+          "name": "libc.so.6",
+          "resolution": "base ABI"
+        }
+      ]
+    },
+    {
+      "path": "python/lib/python3.12/site-packages/numpy/random/_bounded_integers.cpython-312-x86_64-linux-gnu.so",
+      "dependencies": [
+        {
+          "name": "libm.so.6",
+          "resolution": "base ABI"
+        },
+        {
+          "name": "libc.so.6",
+          "resolution": "base ABI"
+        }
+      ]
+    },
+    {
+      "path": "python/lib/python3.12/site-packages/numpy/_core/_multiarray_tests.cpython-312-x86_64-linux-gnu.so",
+      "dependencies": [
+        {
+          "name": "libm.so.6",
+          "resolution": "base ABI"
+        },
+        {
+          "name": "libc.so.6",
+          "resolution": "base ABI"
+        }
+      ]
+    },
+    {
+      "path": "python/lib/python3.12/site-packages/numpy/_core/_operand_flag_tests.cpython-312-x86_64-linux-gnu.so",
+      "dependencies": []
+    },
+    {
+      "path": "python/lib/python3.12/site-packages/numpy/_core/_simd.cpython-312-x86_64-linux-gnu.so",
+      "dependencies": [
+        {
+          "name": "libm.so.6",
+          "resolution": "base ABI"
+        },
+        {
+          "name": "libc.so.6",
+          "resolution": "base ABI"
+        }
+      ]
+    },
+    {
+      "path": "python/lib/python3.12/site-packages/numpy/_core/_rational_tests.cpython-312-x86_64-linux-gnu.so",
+      "dependencies": [
+        {
+          "name": "libc.so.6",
+          "resolution": "base ABI"
+        }
+      ]
+    },
+    {
+      "path": "python/lib/python3.12/site-packages/numpy/_core/_umath_tests.cpython-312-x86_64-linux-gnu.so",
+      "dependencies": [
+        {
+          "name": "libm.so.6",
+          "resolution": "base ABI"
+        },
+        {
+          "name": "libc.so.6",
+          "resolution": "base ABI"
+        }
+      ]
+    },
+    {
+      "path": "python/lib/python3.12/site-packages/numpy/_core/_multiarray_umath.cpython-312-x86_64-linux-gnu.so",
+      "dependencies": [
+        {
+          "name": "libscipy_openblas64_-f48b354e.so",
+          "resolution": "bundled"
+        },
+        {
+          "name": "libstdc++.so.6",
+          "resolution": "base ABI"
+        },
+        {
+          "name": "libm.so.6",
+          "resolution": "base ABI"
+        },
+        {
+          "name": "libgcc_s.so.1",
+          "resolution": "base ABI"
+        },
+        {
+          "name": "libc.so.6",
+          "resolution": "base ABI"
+        },
+        {
+          "name": "libpthread.so.0",
+          "resolution": "base ABI"
+        },
+        {
+          "name": "libgfortran-83c28eba-468e71e5.so.5.0.0",
+          "resolution": "bundled"
+        },
+        {
+          "name": "libquadmath-2284e583-a9307bba.so.0.0.0",
+          "resolution": "bundled"
+        },
+        {
+          "name": "libz.so.1",
+          "resolution": "bundled"
+        }
+      ]
+    },
+    {
+      "path": "python/lib/python3.12/site-packages/numpy/_core/_struct_ufunc_tests.cpython-312-x86_64-linux-gnu.so",
+      "dependencies": []
+    },
+    {
+      "path": "python/lib/python3.12/site-packages/numpy/fft/_pocketfft_umath.cpython-312-x86_64-linux-gnu.so",
+      "dependencies": [
+        {
+          "name": "libstdc++.so.6",
+          "resolution": "base ABI"
+        },
+        {
+          "name": "libm.so.6",
+          "resolution": "base ABI"
+        },
+        {
+          "name": "libgcc_s.so.1",
+          "resolution": "base ABI"
+        },
+        {
+          "name": "libc.so.6",
+          "resolution": "base ABI"
+        }
+      ]
+    },
+    {
+      "path": "python/lib/python3.12/site-packages/numpy/linalg/_umath_linalg.cpython-312-x86_64-linux-gnu.so",
+      "dependencies": [
+        {
+          "name": "libscipy_openblas64_-f48b354e.so",
+          "resolution": "bundled"
+        },
+        {
+          "name": "libm.so.6",
+          "resolution": "base ABI"
+        },
+        {
+          "name": "libc.so.6",
+          "resolution": "base ABI"
+        },
+        {
+          "name": "libpthread.so.0",
+          "resolution": "base ABI"
+        },
+        {
+          "name": "libgfortran-83c28eba-468e71e5.so.5.0.0",
+          "resolution": "bundled"
+        },
+        {
+          "name": "libquadmath-2284e583-a9307bba.so.0.0.0",
+          "resolution": "bundled"
+        },
+        {
+          "name": "libz.so.1",
+          "resolution": "bundled"
+        },
+        {
+          "name": "libgcc_s.so.1",
+          "resolution": "base ABI"
+        }
+      ]
+    },
+    {
+      "path": "python/lib/python3.12/site-packages/numpy/linalg/lapack_lite.cpython-312-x86_64-linux-gnu.so",
+      "dependencies": [
+        {
+          "name": "libscipy_openblas64_-f48b354e.so",
+          "resolution": "bundled"
+        },
+        {
+          "name": "libm.so.6",
+          "resolution": "base ABI"
+        },
+        {
+          "name": "libpthread.so.0",
+          "resolution": "base ABI"
+        },
+        {
+          "name": "libgfortran-83c28eba-468e71e5.so.5.0.0",
+          "resolution": "bundled"
+        },
+        {
+          "name": "libc.so.6",
+          "resolution": "base ABI"
+        },
+        {
+          "name": "libquadmath-2284e583-a9307bba.so.0.0.0",
+          "resolution": "bundled"
+        },
+        {
+          "name": "libz.so.1",
+          "resolution": "bundled"
+        },
+        {
+          "name": "libgcc_s.so.1",
+          "resolution": "base ABI"
+        }
+      ]
+    }
+  ],
+  "redistribution_review": false
+}

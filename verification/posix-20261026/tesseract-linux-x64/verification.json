@@ -1,0 +1,33 @@
+{
+  "engine": "tesseract",
+  "platform": {
+    "os": "linux",
+    "arch": "x86_64",
+    "os_version": "6.8.0",
+    "libc": "glibc",
+    "libc_version": "2.35"
+  },
+  "runtime_sha256": "9e4151af16bf653da77e2341fc35968f96e09752179ddeb13245ffc734c6182f",
+  "selected_languages": [
+    "ara",
+    "eng",
+    "rus"
+  ],
+  "native_validation": null,
+  "update_preserves_selection": "passed",
+  "additional_update_downloads": 0,
+  "rollback": "passed",
+  "native_cancellation_and_child_reaping": "passed",
+  "invalid_model_rejected": "passed",
+  "offline_removal": "passed",
+  "generation_leases": "passed",
+  "native_modules_in_parent": [],
+  "samples": [
+    {
+      "en": "TEST 123\n"
+    }
+  ],
+  "application_build": false,
+  "public_catalog": false,
+  "seconds": 1.99
+}

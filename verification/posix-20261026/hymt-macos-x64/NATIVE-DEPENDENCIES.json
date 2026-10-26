@@ -1,0 +1,18 @@
+{
+  "platform": {
+    "os": "macos",
+    "arch": "x86_64",
+    "os_version": "15.7.9"
+  },
+  "native_files": [
+    {
+      "path": "bin/llama-cli",
+      "dependencies": [
+        "/usr/lib/libSystem.B.dylib",
+        "/System/Library/Frameworks/Accelerate.framework/Versions/A/Accelerate",
+        "/usr/lib/libc++.1.dylib"
+      ]
+    }
+  ],
+  "redistribution_review": false
+}

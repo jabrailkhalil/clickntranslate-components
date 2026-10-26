@@ -1,0 +1,71 @@
+{
+  "engine": "rapidocr",
+  "platform": {
+    "os": "macos",
+    "arch": "arm64",
+    "os_version": "14.8.9"
+  },
+  "runtime_sha256": "06159acb3dfcb4118985ad2ef0a4f118be2a6e6bf5c04ff9ce0332994636980e",
+  "selected_languages": [
+    "ar",
+    "be",
+    "bg",
+    "cs",
+    "da",
+    "de",
+    "en",
+    "es",
+    "fa",
+    "fi",
+    "fr",
+    "hr",
+    "hu",
+    "id",
+    "it",
+    "mk",
+    "ms",
+    "nl",
+    "no",
+    "pl",
+    "ps",
+    "pt",
+    "ro",
+    "ru",
+    "sk",
+    "sl",
+    "sr",
+    "sv",
+    "tr",
+    "uk",
+    "ur",
+    "vi",
+    "zh"
+  ],
+  "native_validation": {
+    "available": true,
+    "error": "",
+    "dll_runtime": {}
+  },
+  "update_preserves_selection": "passed",
+  "additional_update_downloads": 0,
+  "rollback": "passed",
+  "native_cancellation_and_child_reaping": "passed",
+  "invalid_model_rejected": "passed",
+  "offline_removal": "passed",
+  "generation_leases": "passed",
+  "native_modules_in_parent": [],
+  "samples": [
+    {
+      "en": "TEST 123"
+    },
+    {
+      "ru": "TEST 123"
+    },
+    {
+      "ar": "TEST 123"
+    }
+  ],
+  "application_build": false,
+  "public_catalog": false,
+  "seconds": 47.38
+}

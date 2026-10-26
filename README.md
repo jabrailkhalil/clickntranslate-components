@@ -26,6 +26,24 @@ EasyOCR Windows has a CPU-only **candidate** with its original 14 model families
 
 [Windows verification, 26 October 2026](verification/all-engines-windows-20261026.json) records the successful EasyOCR native CI run, verified final archive hashes, 355 source tests, 72 rendered UI states and all five engines working in one isolated profile. It also retains exact OCR outputs and platform/publication limits. These checks do not promote a candidate to stable or replace frozen-application validation.
 
+## Linux and macOS
+
+The `component-updates-posix` branch adds candidate recipes for all five engines on Linux x64, macOS Apple Silicon and macOS Intel. The application uses the same Install/Update controls, authenticated artifacts, selected model sets, cancellation, rollback and offline removal on these targets. Existing system/legacy installations remain intact until explicit migration.
+
+| Profile | Declared compatibility | Native validation host |
+| --- | --- | --- |
+| Linux x64 | glibc 2.35+, kernel 5.15+ | Ubuntu 22.04 |
+| macOS Apple Silicon | macOS 14+ | macOS 14 ARM64 |
+| macOS Intel | macOS 13+ | macOS 15 Intel |
+
+Contract 3 declares Linux libc compatibility and isolated Python execution. Python runtimes come from exact Python Build Standalone archives and use private, hash-locked wheels under `python -I`. Native Tesseract and llama.cpp are prepared from pinned sources. Linux SDKs include their private zlib. Clients never need pip, a compiler, apt or Homebrew. Older clients skip these new profiles while retaining compatible existing updates.
+
+Intel macOS uses its supported Torch 2.2.2/torchvision 0.17.2 pair with the SDK's default CPU quantization; Apple Silicon uses Torch 2.14.1. EasyOCR's 14 model families are validated on each architecture. The candidate baselines do not imply tests on every intermediate macOS version or support for Linux ARM64/musl.
+
+[POSIX verification, 26 October 2026](verification/all-engines-posix-20261026.json) records successful native jobs with final archive hashes, dependency locks and exact application/recipe commits. Checks include inference, model-preserving update without downloads, rollback, real child cancellation, corrupt-model rejection, offline removal and leases. Results come from successive corrective runs and are recorded per job. Synthetic OCR probes establish runtime viability rather than language-accuracy scores.
+
+These recipes and CI artifacts do not publish runtime Releases or change `public/`. Stable approval, redistribution review, frozen-app tests, macOS signing/Gatekeeper and interactive Qt validation remain separate gates. No application package is built by the POSIX candidate workflow.
+
 ## Maintenance
 
 Daily automation refreshes short-lived snapshot/timestamp metadata using restricted online keys. Approval of a new catalog requires the author's targets key. Targets approval expires after 90 days and must be renewed by the maintainer; refresh automation fails visibly before it can serve an expired approval.

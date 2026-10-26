@@ -1,0 +1,98 @@
+{
+  "engine": "hymt",
+  "platform": {
+    "os": "macos",
+    "arch": "x86_64",
+    "os_version": "15.7.9"
+  },
+  "runtime_sha256": "0bad8d2d9ce2ea7ffd5f6237405a563a0a7bc3dbc6fa1617d25deb8d13d0dc18",
+  "selected_languages": [
+    "ar",
+    "bn",
+    "bo",
+    "cs",
+    "de",
+    "en",
+    "es",
+    "fa",
+    "fr",
+    "gu",
+    "he",
+    "hi",
+    "id",
+    "it",
+    "ja",
+    "kk",
+    "km",
+    "ko",
+    "mn",
+    "mr",
+    "ms",
+    "my",
+    "nl",
+    "pl",
+    "pt",
+    "ru",
+    "ta",
+    "te",
+    "th",
+    "tl",
+    "tr",
+    "ug",
+    "uk",
+    "ur",
+    "vi",
+    "yue",
+    "zh",
+    "zh-Hant"
+  ],
+  "native_validation": {
+    "runner_build": "11899",
+    "inference": [
+      {
+        "source": "en",
+        "target": "ru",
+        "result": "Привет, мир!"
+      },
+      {
+        "source": "ru",
+        "target": "en",
+        "result": "Hello, world!"
+      },
+      {
+        "source": "en",
+        "target": "ar",
+        "result": "مرحبًا، عالم!"
+      }
+    ],
+    "error": ""
+  },
+  "update_preserves_selection": "passed",
+  "additional_update_downloads": 0,
+  "rollback": "passed",
+  "native_cancellation_and_child_reaping": "passed",
+  "invalid_model_rejected": "passed",
+  "offline_removal": "passed",
+  "generation_leases": "passed",
+  "native_modules_in_parent": [],
+  "samples": [
+    {
+      "source": "en",
+      "target": "ru",
+      "result": "Привет, мир!"
+    },
+    {
+      "source": "ru",
+      "target": "en",
+      "result": "Hello, world!"
+    },
+    {
+      "source": "en",
+      "target": "ar",
+      "result": "مرحبًا، عالم!"
+    }
+  ],
+  "application_build": false,
+  "public_catalog": false,
+  "seconds": 190.34
+}

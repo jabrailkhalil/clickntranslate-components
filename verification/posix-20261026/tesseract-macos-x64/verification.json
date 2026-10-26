@@ -1,0 +1,31 @@
+{
+  "engine": "tesseract",
+  "platform": {
+    "os": "macos",
+    "arch": "x86_64",
+    "os_version": "15.7.9"
+  },
+  "runtime_sha256": "d8a8be589baa2faeae7d6227c30693a2c7be0db1704276b08da39fa2345bd845",
+  "selected_languages": [
+    "ara",
+    "eng",
+    "rus"
+  ],
+  "native_validation": null,
+  "update_preserves_selection": "passed",
+  "additional_update_downloads": 0,
+  "rollback": "passed",
+  "native_cancellation_and_child_reaping": "passed",
+  "invalid_model_rejected": "passed",
+  "offline_removal": "passed",
+  "generation_leases": "passed",
+  "native_modules_in_parent": [],
+  "samples": [
+    {
+      "en": "TEST 123\n"
+    }
+  ],
+  "application_build": false,
+  "public_catalog": false,
+  "seconds": 9.45
+}

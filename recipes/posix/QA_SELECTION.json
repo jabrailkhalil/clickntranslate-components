@@ -1,6 +1,62 @@
 [
   {
+    "profile": "linux-x64",
+    "engine": "rapidocr"
+  },
+  {
+    "profile": "linux-x64",
+    "engine": "tesseract"
+  },
+  {
+    "profile": "linux-x64",
+    "engine": "easyocr"
+  },
+  {
+    "profile": "linux-x64",
+    "engine": "argos"
+  },
+  {
+    "profile": "linux-x64",
+    "engine": "hymt"
+  },
+  {
+    "profile": "macos-arm64",
+    "engine": "rapidocr"
+  },
+  {
+    "profile": "macos-arm64",
+    "engine": "tesseract"
+  },
+  {
+    "profile": "macos-arm64",
+    "engine": "easyocr"
+  },
+  {
+    "profile": "macos-arm64",
+    "engine": "argos"
+  },
+  {
+    "profile": "macos-arm64",
+    "engine": "hymt"
+  },
+  {
+    "profile": "macos-x64",
+    "engine": "rapidocr"
+  },
+  {
+    "profile": "macos-x64",
+    "engine": "tesseract"
+  },
+  {
     "profile": "macos-x64",
     "engine": "easyocr"
+  },
+  {
+    "profile": "macos-x64",
+    "engine": "argos"
+  },
+  {
+    "profile": "macos-x64",
+    "engine": "hymt"
   }
 ]

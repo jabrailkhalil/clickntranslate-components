@@ -1,0 +1,69 @@
+{
+  "engine": "easyocr",
+  "platform": {
+    "os": "macos",
+    "arch": "arm64",
+    "os_version": "14.8.9"
+  },
+  "runtime_sha256": "42d469a8b94eeff61f97663724a87be47288041ed11ecbc8cc0e6e8a0fa420bb",
+  "selected_languages": [
+    "arabic",
+    "bengali",
+    "cyrillic_g2",
+    "devanagari",
+    "english_g2",
+    "japanese_g2",
+    "kannada_g2",
+    "korean_g2",
+    "latin_g2",
+    "tamil",
+    "telugu_g2",
+    "thai",
+    "zh_sim_g2",
+    "zh_tra"
+  ],
+  "native_validation": {
+    "validated": [
+      "arabic",
+      "bengali",
+      "cyrillic_g2",
+      "devanagari",
+      "english_g2",
+      "japanese_g2",
+      "kannada_g2",
+      "korean_g2",
+      "latin_g2",
+      "tamil",
+      "telugu_g2",
+      "thai",
+      "zh_sim_g2",
+      "zh_tra"
+    ],
+    "torch": "2.14.1",
+    "cuda": null,
+    "dll_runtime": {},
+    "error": ""
+  },
+  "update_preserves_selection": "passed",
+  "additional_update_downloads": 0,
+  "rollback": "passed",
+  "native_cancellation_and_child_reaping": "passed",
+  "invalid_model_rejected": "passed",
+  "offline_removal": "passed",
+  "generation_leases": "passed",
+  "native_modules_in_parent": [],
+  "samples": [
+    {
+      "en": "TEST 123"
+    },
+    {
+      "ru": "TEST 123"
+    },
+    {
+      "ar": "TES7 123"
+    }
+  ],
+  "application_build": false,
+  "public_catalog": false,
+  "seconds": 448.06
+}

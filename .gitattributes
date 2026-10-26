@@ -3,3 +3,5 @@ public/** -text whitespace=cr-at-eol
 *.yml text eol=lf
 *.py text eol=lf
 *.lock text eol=lf
+# Native audit files are hashed in the verification index; preserve their bytes.
+verification/posix-*/** -text whitespace=cr-at-eol

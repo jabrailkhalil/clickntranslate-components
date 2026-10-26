@@ -1,0 +1,73 @@
+{
+  "engine": "easyocr",
+  "platform": {
+    "os": "linux",
+    "arch": "x86_64",
+    "os_version": "6.8.0",
+    "libc": "glibc",
+    "libc_version": "2.35"
+  },
+  "runtime_sha256": "142d83666c290317e1cc8d0931ab997a97ca7d5b3ad107dac211c656519feb75",
+  "selected_languages": [
+    "arabic",
+    "bengali",
+    "cyrillic_g2",
+    "devanagari",
+    "english_g2",
+    "japanese_g2",
+    "kannada_g2",
+    "korean_g2",
+    "latin_g2",
+    "tamil",
+    "telugu_g2",
+    "thai",
+    "zh_sim_g2",
+    "zh_tra"
+  ],
+  "native_validation": {
+    "validated": [
+      "arabic",
+      "bengali",
+      "cyrillic_g2",
+      "devanagari",
+      "english_g2",
+      "japanese_g2",
+      "kannada_g2",
+      "korean_g2",
+      "latin_g2",
+      "tamil",
+      "telugu_g2",
+      "thai",
+      "zh_sim_g2",
+      "zh_tra"
+    ],
+    "torch": "2.14.1+cpu",
+    "cuda": null,
+    "dll_runtime": {
+      "libz.so.1": "bundled"
+    },
+    "error": ""
+  },
+  "update_preserves_selection": "passed",
+  "additional_update_downloads": 0,
+  "rollback": "passed",
+  "native_cancellation_and_child_reaping": "passed",
+  "invalid_model_rejected": "passed",
+  "offline_removal": "passed",
+  "generation_leases": "passed",
+  "native_modules_in_parent": [],
+  "samples": [
+    {
+      "en": "TEST 123"
+    },
+    {
+      "ru": "TEST 123"
+    },
+    {
+      "ar": "TES7 123"
+    }
+  ],
+  "application_build": false,
+  "public_catalog": false,
+  "seconds": 429.03
+}

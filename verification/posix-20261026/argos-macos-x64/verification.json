@@ -1,0 +1,53 @@
+{
+  "engine": "argos",
+  "platform": {
+    "os": "macos",
+    "arch": "x86_64",
+    "os_version": "15.7.9"
+  },
+  "runtime_sha256": "9348f8659be6d5b54815b51d578a8acf3268b7d24f7b7464e23ce690696e9446",
+  "selected_languages": [
+    "ar__en",
+    "en__ar",
+    "en__ru",
+    "ru__en"
+  ],
+  "native_validation": {
+    "validated": [
+      "ar__en",
+      "en__ar",
+      "en__ru",
+      "ru__en"
+    ],
+    "error": "",
+    "dll_runtime": {}
+  },
+  "update_preserves_selection": "passed",
+  "additional_update_downloads": 0,
+  "rollback": "passed",
+  "native_cancellation_and_child_reaping": "passed",
+  "invalid_model_rejected": "passed",
+  "offline_removal": "passed",
+  "generation_leases": "passed",
+  "native_modules_in_parent": [],
+  "samples": [
+    {
+      "source": "en",
+      "target": "ru",
+      "result": "Привет, мир!"
+    },
+    {
+      "source": "ru",
+      "target": "en",
+      "result": "Hello, world!"
+    },
+    {
+      "source": "en",
+      "target": "ar",
+      "result": "مرحبا، العالم!"
+    }
+  ],
+  "application_build": false,
+  "public_catalog": false,
+  "seconds": 123.86
+}

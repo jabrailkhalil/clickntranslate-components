@@ -1,0 +1,17 @@
+{
+  "platform": {
+    "os": "macos",
+    "arch": "arm64",
+    "os_version": "14.8.9"
+  },
+  "native_files": [
+    {
+      "path": "bin/tesseract",
+      "dependencies": [
+        "/usr/lib/libSystem.B.dylib",
+        "/usr/lib/libc++.1.dylib"
+      ]
+    }
+  ],
+  "redistribution_review": false
+}
