@@ -40,7 +40,7 @@ jobs:
     runs-on: ${{ matrix.runner }}
     timeout-minutes: 60
     env:
-      QA_ROOT: ${{ github.workspace }}/../ClicknTranslate-QA/${{ matrix.engine }}-${{ matrix.profile }}
+      QA_ROOT: ${{ github.workspace }}/ClicknTranslate-QA/${{ matrix.engine }}-${{ matrix.profile }}
     steps:
       - uses: actions/checkout@v4
         with:
