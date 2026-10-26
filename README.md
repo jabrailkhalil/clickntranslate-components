@@ -14,6 +14,8 @@ Install and update components from **Language packages** inside the application.
 
 The initial Windows x64 RapidOCR runtime is a **preview**. It is tested separately from the application and does not declare frozen-app, macOS or Linux validation complete. The stable channel remains empty until those release checks are completed. Existing installed engines continue to work.
 
+Tesseract Windows has a pinned **candidate recipe** and a manual native-validation workflow. Candidate artifacts are not published to the trusted catalog automatically. Tesseract language files remain separate: the application downloads only selected languages and preserves them across engine updates. Public promotion requires the native/frozen checks and the bundled DLL license/source inventory.
+
 ## Maintenance
 
 Daily automation refreshes short-lived snapshot/timestamp metadata using restricted online keys. Approval of a new catalog requires the author's targets key. Targets approval expires after 90 days and must be renewed by the maintainer; refresh automation fails visibly before it can serve an expired approval.

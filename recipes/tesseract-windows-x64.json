@@ -1,0 +1,22 @@
+{
+  "schema": 1,
+  "component": "ocr.tesseract",
+  "version": "5.5.3.20260724",
+  "runtime": {
+    "url": "https://github.com/tesseract-ocr/tesseract/releases/download/5.5.3/tesseract-ocr-w64-setup-5.5.3.20260724.exe",
+    "sha256": "bee9e3434bd94fd65387d9be28cd467a41f61b1275383b55b0f59a1331270ae4"
+  },
+  "models": {
+    "repository": "https://github.com/tesseract-ocr/tessdata_fast",
+    "commit": "87416418657359cb625c412a48b6e1d6d41c29bd",
+    "archive_sha256": "587b736e086b795d737bf454c04827c3be356b332e72385e1e1fad5f5b796ba1"
+  },
+  "extractor": {
+    "installer_url": "https://github.com/ip7z/7zip/releases/download/26.05/7z2605-x64.exe",
+    "installer_sha256": "fd99e86f57d8f429ef5ed045bf98315af962e2309b0f1ba87a147a44c71647d0",
+    "bootstrap_url": "https://github.com/ip7z/7zip/releases/download/26.05/7zr.exe",
+    "bootstrap_sha256": "9bf582b894dfa665f852d7e9112b02290a1c303c2d95a21fcdc41ffcb03143b7"
+  },
+  "channel": "local-candidate",
+  "redistribution_review": false
+}
