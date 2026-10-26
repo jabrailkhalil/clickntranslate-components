@@ -63,6 +63,10 @@ def prepare(recipe_path,output):
         '-DDISABLE_ARCHIVE=ON','-DDISABLE_TIFF=ON','-DENABLE_NATIVE=OFF','-DGRAPHICS_DISABLED=ON','-DOPENMP_BUILD=OFF'])
     runtime=output/'runtime';runtime.mkdir();executable=runtime/'tesseract.exe'
     shutil.copy2(prefix/'bin/tesseract.exe',executable)
+    # Positioned/fullscreen OCR requests the upstream tsv config explicitly.
+    # Models remain separate, but these format configs belong to the runtime.
+    for name in ('configs','tessconfigs'):
+        shutil.copytree(sources['tesseract']/'tessdata'/name,runtime/'tessdata'/name)
     import pefile
     pe=pefile.PE(str(executable));imports=[entry.dll.decode('ascii') for entry in pe.DIRECTORY_ENTRY_IMPORT]
     allowed={'kernel32.dll','user32.dll','advapi32.dll','shell32.dll','ole32.dll','bcrypt.dll'}
@@ -82,7 +86,7 @@ def prepare(recipe_path,output):
     runtime=moved
     from PIL import Image,ImageDraw
     image=output/'fixture.png';pil=Image.new('RGB',(500,100),'white');ImageDraw.Draw(pil).text((20,20),'TEST 123',fill='black',font_size=40);pil.save(image)
-    models=output/'models';models.mkdir();results={}
+    models=output/'models';shutil.copytree(runtime/'tessdata',models);results={}
     for language,item in recipe['test_models'].items():
         response=requests.get(item['url'],timeout=90);response.raise_for_status()
         path=models/(language+'.traineddata');path.write_bytes(response.content)
@@ -91,6 +95,9 @@ def prepare(recipe_path,output):
         assert result.returncode==0,result.stderr
         results[language]=result.stdout.strip()
     assert 'TEST' in results['eng'],results
+    positioned=subprocess.run([str(runtime/'tesseract.exe'),str(image),'stdout','--tessdata-dir',str(models),
+        '-l','eng','--psm','6','tsv'],capture_output=True,text=True,timeout=60,check=True)
+    assert positioned.stdout.startswith('level\tpage_num') and '\tTEST' in positioned.stdout,positioned.stdout
     archive=output/'tesseract-windows-x64-5.5.3-native-runtime.zip'
     with zipfile.ZipFile(archive,'w',zipfile.ZIP_DEFLATED,compresslevel=6) as bundle:
         for path in sorted(runtime.rglob('*')):
@@ -102,7 +109,7 @@ def prepare(recipe_path,output):
     descriptor={'filename':archive.name,'size':archive.stat().st_size,'sha256':digest(archive),
         'unpacked_size':sum(p.stat().st_size for p in runtime.rglob('*') if p.is_file()),'recipe':recipe}
     (output/'runtime-artifact.json').write_text(json.dumps(descriptor,indent=2)+'\n')
-    (output/'verification.json').write_text(json.dumps({'relocation_with_spaces':True,'native_models':results,'version':version,
+    (output/'verification.json').write_text(json.dumps({'relocation_with_spaces':True,'native_models':results,'tsv_layout':True,'version':version,
         'imports':imports,'runtime_sha256':descriptor['sha256'],'application_build':False},indent=2)+'\n')
     print(json.dumps({k:v for k,v in descriptor.items() if k!='recipe'}))
 
