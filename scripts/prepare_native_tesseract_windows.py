@@ -24,7 +24,11 @@ def prepare(recipe_path,output):
         'Microsoft.VisualStudio.Component.VC.Tools.x86.x64','-property','installationPath'],text=True).strip()
     if not installation:raise RuntimeError('Microsoft C++ build tools are missing')
     setup=Path(installation)/'VC/Auxiliary/Build/vcvars64.bat'
-    result=subprocess.run(['cmd.exe','/s','/c',f'call "{setup}" >nul && set'],capture_output=True,text=True,check=True)
+    # cmd.exe parses its command string itself; list2cmdline's backslash-quote
+    # escaping is not the quoting syntax of a batch command.
+    command='cmd.exe /d /s /c ""'+str(setup)+'" >nul && set"'
+    result=subprocess.run(command,capture_output=True,text=True)
+    if result.returncode:raise RuntimeError('MSVC initialization failed: '+result.stderr[:1000])
     environment=os.environ.copy()
     environment.update(line.split('=',1) for line in result.stdout.splitlines() if '=' in line and not line.startswith('='))
     for item in recipe['sources']:
