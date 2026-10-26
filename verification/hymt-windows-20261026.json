@@ -1,0 +1,222 @@
+{
+  "date": "2026-10-26",
+  "source_commit": "d80085b50af86f0303105cde2b2d56ffe4466874",
+  "branch": "component-updates",
+  "component_workflow_commit": "72fe0475e717068c4f02d7be52bd8e280263191b",
+  "application_build": false,
+  "application_release": false,
+  "stable_catalog_changed": false,
+  "macos_transferred": false,
+  "shutdown": false,
+  "ci": {
+    "run": 40332184489,
+    "url": "https://github.com/jabrailkhalil/clickntranslate-components/actions/runs/40332184489",
+    "conclusion": "success",
+    "downloaded_archive_hashes_verified": true
+  },
+  "discovery_ci": {
+    "run": 40332905598,
+    "conclusion": "success"
+  },
+  "native_validation": {
+    "application_build": false,
+    "public_catalog": false,
+    "runtime_source": "local candidates",
+    "old_runtime": "9048",
+    "new_runtime": "11899",
+    "model_sha256": "4383ac0c3c8e476de98ff979c2a3f069f8c4fb385e7860cf2d28da896cc477c7",
+    "model_downloads_during_update": 0,
+    "artifact_downloads": 5,
+    "legacy_model_reuse": "passed",
+    "native_update": "passed",
+    "rollback": "passed",
+    "validator_cancellation_and_reaping": "passed",
+    "translation_cancellation_and_reaping": "passed",
+    "invalid_model_preserves_active": "passed",
+    "native_modules_in_parent": [],
+    "offline_removal_waits_for_worker": "passed",
+    "private_runtime_modules": {
+      "9048": {
+        "mtmd.dll": "bundled",
+        "ggml-base.dll": "bundled",
+        "llama.dll": "bundled",
+        "llama-common.dll": "bundled",
+        "msvcp140.dll": "bundled",
+        "ggml.dll": "bundled",
+        "vcruntime140.dll": "bundled",
+        "vcruntime140_1.dll": "bundled",
+        "ggml-rpc.dll": "bundled",
+        "ggml-cpu-haswell.dll": "bundled",
+        "libomp140.x86_64.dll": "bundled"
+      },
+      "11899": {
+        "vcruntime140.dll": "bundled",
+        "llama-cli-impl.dll": "bundled",
+        "llama-server-impl.dll": "bundled",
+        "llama.dll": "bundled",
+        "msvcp140.dll": "bundled",
+        "llama-common.dll": "bundled",
+        "mtmd.dll": "bundled",
+        "ggml-base.dll": "bundled",
+        "ggml.dll": "bundled",
+        "vcruntime140_1.dll": "bundled",
+        "libomp.dll": "bundled",
+        "ggml-rpc.dll": "bundled",
+        "ggml-cpu-haswell.dll": "bundled"
+      }
+    },
+    "runtime_sha256": "15498f19086b32dac5ecafa74b63cfb21f8f4d388165ee17357338d68117209c",
+    "comparison": [
+      {
+        "runtime": "9048",
+        "source": "en",
+        "target": "ru",
+        "text": "You have found a hidden room.\n\nReturn to the village before nightfall.",
+        "result": "Вы нашли скрытую комнату.  \nВернитесь в деревню до наступления ночи.",
+        "seconds": 3.29
+      },
+      {
+        "runtime": "9048",
+        "source": "ru",
+        "target": "en",
+        "text": "Вы нашли тайную комнату.\n\nВернитесь в деревню до наступления ночи.",
+        "result": "You’ve found the secret room.  \nReturn to the village before night falls.",
+        "seconds": 3.06
+      },
+      {
+        "runtime": "9048",
+        "source": "en",
+        "target": "ar",
+        "text": "You have found a hidden room.\n\nReturn to the village before nightfall.",
+        "result": "لقد وجدت غرفة مخفية.  \nعد إلى القرية قبل حلول الليل.",
+        "seconds": 3.2
+      },
+      {
+        "runtime": "9048",
+        "source": "zh",
+        "target": "id",
+        "text": "你好，世界！",
+        "result": "Halo, dunia!",
+        "seconds": 2.29
+      },
+      {
+        "runtime": "11899",
+        "source": "en",
+        "target": "ru",
+        "text": "You have found a hidden room.\n\nReturn to the village before nightfall.",
+        "result": "Вы нашли скрытую комнату.  \nВернитесь в деревню до наступления ночи.",
+        "seconds": 3.15
+      },
+      {
+        "runtime": "11899",
+        "source": "ru",
+        "target": "en",
+        "text": "Вы нашли тайную комнату.\n\nВернитесь в деревню до наступления ночи.",
+        "result": "You’ve found the secret room.  \nReturn to the village before night falls.",
+        "seconds": 2.84
+      },
+      {
+        "runtime": "11899",
+        "source": "en",
+        "target": "ar",
+        "text": "You have found a hidden room.\n\nReturn to the village before nightfall.",
+        "result": "لقد وجدتِ غرفة مخفية.  \nعد إلى القرية قبل حلول الليل.",
+        "seconds": 3.02
+      },
+      {
+        "runtime": "11899",
+        "source": "zh",
+        "target": "id",
+        "text": "你好，世界！",
+        "result": "Halo, dunia!",
+        "seconds": 2.22
+      }
+    ],
+    "seconds": 77.66
+  },
+  "runtime_artifact": {
+    "filename": "hymt-windows-x64-b11899-runtime.zip",
+    "size": 20907365,
+    "sha256": "15498f19086b32dac5ecafa74b63cfb21f8f4d388165ee17357338d68117209c",
+    "unpacked_size": 51673235
+  },
+  "baseline_runtime_artifact": {
+    "filename": "hymt-windows-x64-b9048-runtime.zip",
+    "size": 12591614,
+    "sha256": "c70f4781efd321a2630c17928afc6c977cf98e21e9882720d3385dd7ca33c5b0",
+    "unpacked_size": 35451798
+  },
+  "native_import_audit": {
+    "binary_count": 36,
+    "required_system_libraries": [
+      "advapi32.dll",
+      "api-ms-win-core-synch-l1-2-0.dll",
+      "api-ms-win-core-winrt-error-l1-1-0.dll",
+      "api-ms-win-core-winrt-l1-1-0.dll",
+      "api-ms-win-core-winrt-string-l1-1-0.dll",
+      "api-ms-win-crt-convert-l1-1-0.dll",
+      "api-ms-win-crt-environment-l1-1-0.dll",
+      "api-ms-win-crt-filesystem-l1-1-0.dll",
+      "api-ms-win-crt-heap-l1-1-0.dll",
+      "api-ms-win-crt-locale-l1-1-0.dll",
+      "api-ms-win-crt-math-l1-1-0.dll",
+      "api-ms-win-crt-runtime-l1-1-0.dll",
+      "api-ms-win-crt-stdio-l1-1-0.dll",
+      "api-ms-win-crt-string-l1-1-0.dll",
+      "api-ms-win-crt-time-l1-1-0.dll",
+      "api-ms-win-crt-utility-l1-1-0.dll",
+      "crypt32.dll",
+      "d3d11.dll",
+      "d3dcompiler_47.dll",
+      "dxgi.dll",
+      "kernel32.dll",
+      "ole32.dll",
+      "oleaut32.dll",
+      "psapi.dll",
+      "shell32.dll",
+      "version.dll",
+      "ws2_32.dll"
+    ],
+    "unresolved_private_libraries": []
+  },
+  "redistribution_review": false,
+  "frozen_application": false,
+  "macos": false,
+  "linux": false,
+  "publication": "unpublished candidate",
+  "manager_layout": {
+    "kind": "Qt offscreen",
+    "locales": 12,
+    "themes": 2,
+    "states": 24,
+    "visually_inspected": [
+      "ar-dark",
+      "id-light"
+    ]
+  },
+  "tests": [
+    {
+      "suite": "hymt-regression-final",
+      "passed": 273,
+      "finished": "2026-10-26T13:28:18.265542+00:00",
+      "platform": "win32",
+      "exit_code": 0,
+      "user_data_unchanged": true,
+      "changed_user_data_paths": []
+    },
+    {
+      "suite": "hymt-final-edge-tests",
+      "passed": 71,
+      "finished": "2026-10-26T13:33:05.789950+00:00",
+      "platform": "win32",
+      "exit_code": 0,
+      "user_data_unchanged": true,
+      "changed_user_data_paths": []
+    }
+  ],
+  "remaining": [
+    "Publish only after redistribution review and final frozen/clean-client checks when application builds are authorized",
+    "EasyOCR still uses its existing installation path",
+    "Prepare and test native managed macOS/Linux profiles separately"
+  ]
+}
