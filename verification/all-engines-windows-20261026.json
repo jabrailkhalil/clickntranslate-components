@@ -1,0 +1,302 @@
+{
+  "date": "2026-10-26",
+  "source_commit": "44e6455a1b14b7b56db13d780ce9de6e28d78a54",
+  "branch": "component-updates",
+  "application_build": false,
+  "application_release": false,
+  "stable_catalog_changed": false,
+  "macos_transferred": false,
+  "shutdown": false,
+  "regression": {
+    "passed": 355,
+    "skipped": 1,
+    "user_data_unchanged": true,
+    "qt_rendered_locales": 12,
+    "qt_rendered_themes": 2,
+    "visual_backend": "Qt offscreen",
+    "native_platform": "Windows x64",
+    "qt_rendered_scale_factors": [
+      1.0,
+      1.25,
+      1.5
+    ],
+    "qt_rendered_states": 72
+  },
+  "easyocr_native_local": {
+    "runtime_sha256": "12d4d320e98cd3fb8380632fd333f182fbd309b7b23301ed4c50c292328d2ab0",
+    "all_model_groups": [
+      "arabic",
+      "bengali",
+      "cyrillic_g2",
+      "devanagari",
+      "english_g2",
+      "japanese_g2",
+      "kannada_g2",
+      "korean_g2",
+      "latin_g2",
+      "tamil",
+      "telugu_g2",
+      "thai",
+      "zh_sim_g2",
+      "zh_tra"
+    ],
+    "native_validation": {
+      "validated": [
+        "arabic",
+        "bengali",
+        "cyrillic_g2",
+        "devanagari",
+        "english_g2",
+        "japanese_g2",
+        "kannada_g2",
+        "korean_g2",
+        "latin_g2",
+        "tamil",
+        "telugu_g2",
+        "thai",
+        "zh_sim_g2",
+        "zh_tra"
+      ],
+      "torch": "2.14.1+cpu",
+      "cuda": null,
+      "dll_runtime": {
+        "msvcp140.dll": "bundled",
+        "msvcp140_1.dll": "bundled",
+        "msvcp140_2.dll": "bundled"
+      },
+      "error": ""
+    },
+    "recognition": [
+      {
+        "language": "en",
+        "source": "Hello world 123",
+        "result": "Hello world 123",
+        "boxes": 1,
+        "confidence": 0.9978836275088024
+      },
+      {
+        "language": "ru",
+        "source": "Привет мир 123",
+        "result": "Привет мир 123",
+        "boxes": 1,
+        "confidence": 0.9982507309653346
+      },
+      {
+        "language": "ar",
+        "source": "مرحبا بالعالم",
+        "result": "مرحبا بالعالم",
+        "boxes": 2,
+        "confidence": 0.6541550821316543
+      },
+      {
+        "language": "ta",
+        "source": "தமிழ் மொழி",
+        "result": "தமிழ் மச எாழி",
+        "boxes": 2,
+        "confidence": 0.43271887607929355
+      }
+    ],
+    "artifact_downloads": 16,
+    "update_additional_downloads": 0,
+    "model_addition": "passed",
+    "selected_groups_preserved": "passed",
+    "rollback": "passed",
+    "native_cancellation_and_child_reaping": "passed",
+    "invalid_checkpoint_rejected": "passed",
+    "offline_remove_all": "passed",
+    "empty_selection_preserved": "passed",
+    "generation_leases_and_removal": "passed",
+    "legacy_resurrection_blocked": "passed",
+    "native_modules_in_parent": [],
+    "controlled_revision_same_sdk_bytes": true,
+    "seconds": 702.9,
+    "application_build": false
+  },
+  "five_engines_native_local": {
+    "components": [
+      "ocr.rapidocr",
+      "ocr.tesseract",
+      "ocr.easyocr",
+      "translation.argos",
+      "translation.hymt"
+    ],
+    "native_recognition_and_translation": {
+      "rapidocr-en": "Hello world 123",
+      "easyocr-en": "Hello world 123",
+      "tesseract-en": "Hello world 123",
+      "rapidocr-ru": "Привет мир 123",
+      "easyocr-ru": "Привет мир 123",
+      "tesseract-ru": "Привет мир 123",
+      "rapidocr-ar": "مر د L",
+      "easyocr-ar": "مرحبا بالعالم",
+      "tesseract-ar": "0000000000000 مرهباطهم",
+      "argos-ru": "Привет, мир!",
+      "hymt-ru": "Привет, мир!",
+      "argos-ar": "مرحبا، العالم!",
+      "hymt-ar": "مرحبًا، عالم!"
+    },
+    "engine_isolation": "passed",
+    "update_and_remove_do_not_change_other_generations": "passed",
+    "additional_model_downloads_on_update": 0,
+    "native_modules_in_parent": [],
+    "artifact_downloads": 26,
+    "seconds": 211.7,
+    "catalog_source": "explicit local candidates, not public approval",
+    "application_build": false,
+    "foreground_windows": false
+  },
+  "discovery_ci": {
+    "id": 40348335189,
+    "conclusion": "success",
+    "watched_sources": 10
+  },
+  "limits": [
+    "No frozen application has been built.",
+    "No macOS/Linux managed profile was natively validated in this stage.",
+    "Candidate preparation is not approval for the stable signed catalog.",
+    "Native coexistence tests are not an OCR accuracy benchmark; RapidOCR and Tesseract recognized the synthetic Arabic fixture poorly. Exact outputs are retained."
+  ],
+  "native_implementation_commit": "917b96d167c44ce80715c0dc66919313c8247557",
+  "live_catalog_check": {
+    "authenticated_catalog_revision": 3,
+    "selected_preview_bundle": "rapidocr-windows-x64-ppocrv5-r2",
+    "supported_contract": 1,
+    "stable_profile_count": 0,
+    "seconds": 1.7,
+    "artifacts_downloaded": 0,
+    "catalog_modified": false
+  },
+  "arabic_pinned_font_comparison": {
+    "fixture": "Synthetic Noto Sans Arabic, 52 px; not a game benchmark",
+    "expected": "مرحبا بالعالم",
+    "easyocr": "مرحبا بالعالم",
+    "rapidocr": "o U مر",
+    "tesseract": "00000000 صرحب بالعالم"
+  },
+  "pinned_font_quality_probe": [
+    {
+      "language": "en",
+      "text": "Hello world 123",
+      "source": "Hello world 123"
+    },
+    {
+      "language": "ru",
+      "text": "Привет мир 123",
+      "source": "Привет мир 123"
+    },
+    {
+      "language": "ar",
+      "text": "مرحبا بالعالم",
+      "source": "مرحبا بالعالم"
+    },
+    {
+      "language": "ta",
+      "text": "தமிழ் மரழி",
+      "source": "தமிழ் மொழி"
+    }
+  ],
+  "easyocr_ci": {
+    "run": 40352146096,
+    "url": "https://github.com/jabrailkhalil/clickntranslate-components/actions/runs/40352146096",
+    "conclusion": "success",
+    "artifact_id": 12664307658,
+    "artifact_zip_sha256": "eb8815df5addb20a6870c43e61ba0732732e5e5353dfe85737b4c9c174787e1b",
+    "runtime_sha256": "839024e00fb26d7dea867f0498e104a878d94f63bd212b217b85ed1563c9456e",
+    "downloaded_archive_hashes_verified": true,
+    "native_validation": {
+      "runtime_sha256": "839024e00fb26d7dea867f0498e104a878d94f63bd212b217b85ed1563c9456e",
+      "all_model_groups": [
+        "arabic",
+        "bengali",
+        "cyrillic_g2",
+        "devanagari",
+        "english_g2",
+        "japanese_g2",
+        "kannada_g2",
+        "korean_g2",
+        "latin_g2",
+        "tamil",
+        "telugu_g2",
+        "thai",
+        "zh_sim_g2",
+        "zh_tra"
+      ],
+      "native_validation": {
+        "validated": [
+          "arabic",
+          "bengali",
+          "cyrillic_g2",
+          "devanagari",
+          "english_g2",
+          "japanese_g2",
+          "kannada_g2",
+          "korean_g2",
+          "latin_g2",
+          "tamil",
+          "telugu_g2",
+          "thai",
+          "zh_sim_g2",
+          "zh_tra"
+        ],
+        "torch": "2.14.1+cpu",
+        "cuda": null,
+        "dll_runtime": {
+          "msvcp140.dll": "bundled",
+          "msvcp140_1.dll": "bundled",
+          "msvcp140_2.dll": "bundled"
+        },
+        "error": ""
+      },
+      "recognition": [
+        {
+          "language": "en",
+          "source": "Hello world 123",
+          "result": "Hello world 123",
+          "boxes": 1,
+          "confidence": 0.9957719474530006
+        },
+        {
+          "language": "ru",
+          "source": "Привет мир 123",
+          "result": "Привет мир 123",
+          "boxes": 1,
+          "confidence": 0.9577044279401102
+        },
+        {
+          "language": "ar",
+          "source": "مرحبا بالعالم",
+          "result": "مرحبا بالعالم",
+          "boxes": 1,
+          "confidence": 0.7116069399873434
+        },
+        {
+          "language": "ta",
+          "source": "தமிழ் மொழி",
+          "result": "தமிழ் மரழி",
+          "boxes": 1,
+          "confidence": 0.5062381646361737
+        }
+      ],
+      "artifact_downloads": 16,
+      "update_additional_downloads": 0,
+      "model_addition": "passed",
+      "selected_groups_preserved": "passed",
+      "rollback": "passed",
+      "native_cancellation_and_child_reaping": "passed",
+      "invalid_checkpoint_rejected": "passed",
+      "offline_remove_all": "passed",
+      "empty_selection_preserved": "passed",
+      "generation_leases_and_removal": "passed",
+      "legacy_resurrection_blocked": "passed",
+      "native_modules_in_parent": [],
+      "controlled_revision_same_sdk_bytes": true,
+      "seconds": 502.18,
+      "application_build": false
+    }
+  },
+  "component_workflow_commit": "7f81edb",
+  "qa_font_source_commit": "e7db6ca603fd4862010383ff17ffd6cc4ffac1c0",
+  "ci_notes": [
+    "Earlier attempts exposed missing GUI/font dependencies in the QA harness; the final workflow validates native inference without a GUI SDK and uses pinned licensed font fixtures."
+  ]
+}

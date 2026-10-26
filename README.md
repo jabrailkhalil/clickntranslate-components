@@ -24,6 +24,8 @@ Hy-MT Windows has a native **candidate** with a separately authenticated GGUF mo
 
 EasyOCR Windows has a CPU-only **candidate** with its original 14 model families. Its manual workflow prepares exact Torch/torchvision CPU wheels and a hash-locked runtime, downloads authenticated upstream model ZIPs, and checks real recognition, updates, cancellation, invalid checkpoints, rollback and offline removal. Contract 2 supports installing a declared archive member; older clients keep using their supported profiles. Candidate artifacts remain separate from the public catalog.
 
+[Windows verification, 26 October 2026](verification/all-engines-windows-20261026.json) records the successful EasyOCR native CI run, verified final archive hashes, 355 source tests, 72 rendered UI states and all five engines working in one isolated profile. It also retains exact OCR outputs and platform/publication limits. These checks do not promote a candidate to stable or replace frozen-application validation.
+
 ## Maintenance
 
 Daily automation refreshes short-lived snapshot/timestamp metadata using restricted online keys. Approval of a new catalog requires the author's targets key. Targets approval expires after 90 days and must be renewed by the maintainer; refresh automation fails visibly before it can serve an expired approval.
