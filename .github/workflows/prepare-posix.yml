@@ -1,0 +1,77 @@
+name: Verify Linux and macOS component candidates
+on:
+  push:
+    branches: [component-updates-posix]
+    paths: ['recipes/posix/**', '.github/workflows/prepare-posix.yml']
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  matrix:
+    runs-on: ubuntu-22.04
+    outputs:
+      matrix: ${{ steps.plan.outputs.matrix }}
+      source: ${{ steps.plan.outputs.source }}
+    steps:
+      - uses: actions/checkout@v4
+      - id: plan
+        run: |
+          python3 - <<'PY'
+          import json,os,re
+          from pathlib import Path
+          source=Path('recipes/posix/SOURCE_COMMIT').read_text().strip()
+          assert re.fullmatch('[0-9a-f]{40}',source)
+          rows=json.loads(Path('recipes/posix/QA_SELECTION.json').read_bytes())
+          runners={'linux-x64':'ubuntu-22.04','macos-arm64':'macos-14','macos-x64':'macos-15-intel'}
+          entries=[]
+          for row in rows:
+              assert row['engine'] in ('rapidocr','easyocr','tesseract','argos','hymt')
+              entries.append(dict(row,runner=runners[row['profile']]))
+          with open(os.environ['GITHUB_OUTPUT'],'a') as out:
+              out.write('source='+source+'\n')
+              out.write('matrix='+json.dumps({'include':entries})+'\n')
+          PY
+  native:
+    needs: matrix
+    strategy:
+      fail-fast: false
+      max-parallel: 6
+      matrix: ${{ fromJSON(needs.matrix.outputs.matrix) }}
+    runs-on: ${{ matrix.runner }}
+    timeout-minutes: 60
+    env:
+      QA_ROOT: ${{ github.workspace }}/../ClicknTranslate-QA/${{ matrix.engine }}-${{ matrix.profile }}
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          path: components
+      - uses: actions/checkout@v4
+        with:
+          repository: jabrailkhalil/clickntranslate
+          ref: ${{ needs.matrix.outputs.source }}
+          path: application
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: python -m pip install requests packaging pillow==12.3.0
+      - name: Prepare standalone runtime and pinned native dependencies
+        run: |
+          python application/tools/prepare_posix_component.py --recipe components/recipes/posix/${{ matrix.engine }}-${{ matrix.profile }}.json --output "$QA_ROOT/prepared"
+          python application/tools/prepare_posix_catalog.py --runtime "$QA_ROOT/prepared/runtime-artifact.json" --recipes components/recipes --output "$QA_ROOT/catalog-candidate.json"
+      - name: Validate actual inference, update, cancellation, rollback and removal
+        run: |
+          python application/tools/qa_posix_components.py --prepared "$QA_ROOT/prepared" --catalog "$QA_ROOT/catalog-candidate.json" --output "$QA_ROOT/verification"
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: ${{ matrix.engine }}-${{ matrix.profile }}-candidate
+          path: |
+            ${{ env.QA_ROOT }}/prepared/*-runtime.zip
+            ${{ env.QA_ROOT }}/prepared/runtime-artifact.json
+            ${{ env.QA_ROOT }}/prepared/requirements.lock
+            ${{ env.QA_ROOT }}/prepared/runtime/NATIVE-DEPENDENCIES.json
+            ${{ env.QA_ROOT }}/prepared/runtime/SOURCE-PROVENANCE.json
+            ${{ env.QA_ROOT }}/catalog-candidate.json
+            ${{ env.QA_ROOT }}/verification/verification.json
+          compression-level: 0
+          retention-days: 14
