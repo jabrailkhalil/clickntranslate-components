@@ -1,0 +1,12 @@
+*.pem
+*.key
+*.pfx
+*.p12
+*.jks
+.venv/
+__pycache__/
+build/
+*.zip
+*.onnx
+*.gguf
+report.json
