@@ -1,0 +1,95 @@
+{
+  "index_commit": "ff90de60728f7c1338ff6b75974e4c89b2442d22",
+  "artifacts": [
+    {
+      "pair": "ar_en",
+      "filename": "translate-ar_en-1_0.argosmodel",
+      "url": "https://argos-net.com/v1/translate-ar_en-1_0.argosmodel",
+      "sha256": "bc98cd4e27ca1cebfae9b7086b2ebc635e4dbed45e7cb5f0891cb7d22feacfad",
+      "size": 81869670,
+      "unpacked_size": 96362652,
+      "metadata": {
+        "package_version": "1.0",
+        "argos_version": "1.0",
+        "from_code": "ar",
+        "from_name": "Arabic",
+        "to_code": "en",
+        "to_name": "English"
+      },
+      "top_level": [
+        "ar_en"
+      ],
+      "licenses": [
+        "ar_en/README.md"
+      ]
+    },
+    {
+      "pair": "en_ar",
+      "filename": "translate-en_ar-1_0.argosmodel",
+      "url": "https://argos-net.com/v1/translate-en_ar-1_0.argosmodel",
+      "sha256": "e2a6e84337f7ebbb55f9dc61dcba3a861c0d786ae5a46fa198fd8d6473f5c775",
+      "size": 88502631,
+      "unpacked_size": 96366075,
+      "metadata": {
+        "package_version": "1.0",
+        "argos_version": "1.0",
+        "from_code": "en",
+        "from_name": "English",
+        "to_code": "ar",
+        "to_name": "Arabic"
+      },
+      "top_level": [
+        "en_ar"
+      ],
+      "licenses": [
+        "en_ar/README.md"
+      ]
+    },
+    {
+      "pair": "en_ru",
+      "filename": "translate-en_ru-1_9.argosmodel",
+      "url": "https://argos-net.com/v1/translate-en_ru-1_9.argosmodel",
+      "sha256": "591d743ae103752b88ffc38785c50421320f4eff93c8967e0d3d2e14d4e27811",
+      "size": 195746693,
+      "unpacked_size": 217259288,
+      "metadata": {
+        "package_version": "1.9",
+        "argos_version": "1.9",
+        "from_code": "en",
+        "from_name": "English",
+        "to_code": "ru",
+        "to_name": "Russian",
+        "reference": "https://community.libretranslate.com/t/new-argos-model-en-ru-and-ru-en/872/"
+      },
+      "top_level": [
+        "translate-en_ru-1_9"
+      ],
+      "licenses": [
+        "translate-en_ru-1_9/README.md"
+      ]
+    },
+    {
+      "pair": "ru_en",
+      "filename": "translate-ru_en-1_9.argosmodel",
+      "url": "https://argos-net.com/v1/translate-ru_en-1_9.argosmodel",
+      "sha256": "e9ba8bf722d10a4a4c39f74289d5938fd47eac08dbe4ed0afd22d89445a5c3ac",
+      "size": 156239112,
+      "unpacked_size": 173455367,
+      "metadata": {
+        "package_version": "1.9",
+        "argos_version": "1.9",
+        "from_code": "ru",
+        "from_name": "Russian",
+        "to_code": "en",
+        "to_name": "English",
+        "reference": "https://community.libretranslate.com/t/new-argos-model-en-ru-and-ru-en/872/"
+      },
+      "top_level": [
+        "translate-ru_en-1_9"
+      ],
+      "licenses": [
+        "translate-ru_en-1_9/README.md"
+      ]
+    }
+  ]
+}

@@ -29,7 +29,7 @@ jobs:
       - uses: actions/setup-python@v5
         with:
           python-version: '3.12'
-      - run: python -m pip install requests
+      - run: python -m pip install requests pefile==2024.8.26
       - name: Prepare exact standalone runtime
         shell: pwsh
         run: |
@@ -40,7 +40,7 @@ jobs:
         run: |
           $env:PYTHONPATH = "$PWD/application/src"
           @'
-          import os, sys, shutil
+          import os, sys, shutil, json
           from pathlib import Path
           from rapidocr_models import download_models
           from component_runtime import validate_rapidocr
@@ -51,7 +51,9 @@ jobs:
               response.raise_for_status()
               Path(destination).write_bytes(response.content)
           download_models(root / 'models' / 'ppocrv5', download)
-          validate_rapidocr(root, {'python':'runtime/python.exe', 'worker':'runtime/adapter/ocr_worker.py'})
+          payload = validate_rapidocr(root, {'python':'runtime/python.exe', 'worker':'runtime/adapter/ocr_worker.py'})
+          assert payload['dll_runtime'] == dict.fromkeys(('msvcp140.dll','msvcp140_1.dll','msvcp140_2.dll'),'bundled')
+          (root / 'validation.json').write_text(json.dumps(payload,indent=2))
           (root / 'validation.txt').write_text('Standalone Windows native inference passed. Frozen application not tested.\n')
           '@ | python -
           if ($LASTEXITCODE -ne 0) { throw 'Runtime validation failed' }
@@ -63,5 +65,7 @@ jobs:
             ${{ runner.temp }}/runtime-candidate/runtime-artifact.json
             ${{ runner.temp }}/runtime-candidate/requirements.lock
             ${{ runner.temp }}/runtime-candidate/validation.txt
+            ${{ runner.temp }}/runtime-candidate/validation.json
+            ${{ runner.temp }}/runtime-candidate/runtime/NATIVE-DEPENDENCIES.json
           compression-level: 0
           retention-days: 30
