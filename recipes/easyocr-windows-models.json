@@ -1,0 +1,170 @@
+{
+  "source_commit": "c4f3cd7225efd4f85451bd8b4a7646ae9a092420",
+  "artifacts": [
+    {
+      "group": "english_g2",
+      "url": "https://github.com/JaidedAI/EasyOCR/releases/download/v1.3/english_g2.zip",
+      "sha256": "1b5eaebf1c062de6205560c97ffcfa8dc0e6f413c340e8adc5cfc57e159f61ff",
+      "size": 14040947,
+      "unpacked_size": 15143997,
+      "filename": "english_g2.pth",
+      "member": "english_g2.pth",
+      "model_sha256": "e2272681d9d67a04e2dff396b6e95077bc19001f8f6d3593c307b9852e1c29e8",
+      "probe_code": "en"
+    },
+    {
+      "group": "latin_g2",
+      "url": "https://github.com/JaidedAI/EasyOCR/releases/download/v1.3/latin_g2.zip",
+      "sha256": "29f1920c493378da65a59793fb70e7e190504662b6bed57ab26f4067eb5f3769",
+      "size": 14284936,
+      "unpacked_size": 15406141,
+      "filename": "latin_g2.pth",
+      "member": "latin_g2.pth",
+      "model_sha256": "aaa95be1c4a9cb3496879bed7c520886ce1164f89e026f0c54488394e74e8c55",
+      "probe_code": "de"
+    },
+    {
+      "group": "cyrillic_g2",
+      "url": "https://github.com/JaidedAI/EasyOCR/releases/download/v1.6.1/cyrillic_g2.zip",
+      "sha256": "34060353accfadd4e429f28d392f88cf70c2fc9d2633710a3b00c21412dc627b",
+      "size": 14140353,
+      "unpacked_size": 15256523,
+      "filename": "cyrillic_g2.pth",
+      "member": "cyrillic_g2.pth",
+      "model_sha256": "48d0f3b58f28aa64651ab1032cc2d498c4de25135829668e87c14e7a07529f29",
+      "probe_code": "ru"
+    },
+    {
+      "group": "zh_sim_g2",
+      "url": "https://github.com/JaidedAI/EasyOCR/releases/download/v1.3/zh_sim_g2.zip",
+      "sha256": "eed38bdd9e612bd150f13d2f70fd8e5b24c79c2e2fe621a02603b38d385503e9",
+      "size": 20288076,
+      "unpacked_size": 21951421,
+      "filename": "zh_sim_g2.pth",
+      "member": "zh_sim_g2.pth",
+      "model_sha256": "cb678fdef09d651e7763ca551ad790dc89f0b2e3d2a640484330e338fb574c7a",
+      "probe_code": "ch_sim"
+    },
+    {
+      "group": "japanese_g2",
+      "url": "https://github.com/JaidedAI/EasyOCR/releases/download/v1.3/japanese_g2.zip",
+      "sha256": "7b45d23da9b001e296590ed202a45bc1fcaf06ab661f457c463ed502de766fb5",
+      "size": 16065475,
+      "unpacked_size": 17321277,
+      "filename": "japanese_g2.pth",
+      "member": "japanese_g2.pth",
+      "model_sha256": "afbb32b0485297de5a7c1f59aeecac12c69f32b15cedd3c3d8c2e8529de85af3",
+      "probe_code": "ja"
+    },
+    {
+      "group": "korean_g2",
+      "url": "https://github.com/JaidedAI/EasyOCR/releases/download/v1.3/korean_g2.zip",
+      "sha256": "3cdaad22676723040ceb5c6fe72089d656b3bc1f630889c373ade86f3ab38c2e",
+      "size": 14910151,
+      "unpacked_size": 16081533,
+      "filename": "korean_g2.pth",
+      "member": "korean_g2.pth",
+      "model_sha256": "ecdead53c909748aad74bc2f2beeab3e3ad751134db6335e97ea19f879ca407e",
+      "probe_code": "ko"
+    },
+    {
+      "group": "arabic",
+      "url": "https://github.com/JaidedAI/EasyOCR/releases/download/pre-v1.1.6/arabic.zip",
+      "sha256": "90b08b8e456d435bcdd96141221db5f116ef03ab3efc2d3239cfb24520ad7756",
+      "size": 199916962,
+      "unpacked_size": 215400714,
+      "filename": "arabic.pth",
+      "member": "arabic.pth",
+      "model_sha256": "2a9afd42c374deb98aed0b53c9b77d75e1d00d4e0501f3b0276c54190c89b1a8",
+      "probe_code": "ar"
+    },
+    {
+      "group": "devanagari",
+      "url": "https://github.com/JaidedAI/EasyOCR/releases/download/pre-v1.1.6/devanagari.zip",
+      "sha256": "462a75e10de1ed1f34fbdc4761ccee341d59664fc46ecb3463f60be4862e01f9",
+      "size": 199886824,
+      "unpacked_size": 215406870,
+      "filename": "devanagari.pth",
+      "member": "devanagari.pth",
+      "model_sha256": "1a8d0abb2032c0ec9d06639bc078b7686c10cf3b8193fe42a6382bc6846ae4a3",
+      "probe_code": "hi"
+    },
+    {
+      "group": "thai",
+      "url": "https://github.com/JaidedAI/EasyOCR/releases/download/pre-v1.1.6/thai.zip",
+      "sha256": "4f26ffd98dd28cca89ff6fe0bc761ab865c2b38fabd76a3ce2143d1d88c0d7f1",
+      "size": 199881630,
+      "unpacked_size": 215384298,
+      "filename": "thai.pth",
+      "member": "thai.pth",
+      "model_sha256": "3ebbb9321b9c7c694e169cd23cc37f3c0bd2a160f5b539602bbef80e663e0a17",
+      "probe_code": "th"
+    },
+    {
+      "group": "zh_tra",
+      "url": "https://github.com/JaidedAI/EasyOCR/releases/download/pre-v1.1.6/chinese.zip",
+      "sha256": "71cb95f601ce0c062860224ff3e1d2e807d784f2be92bf53ba500bb1736dabd5",
+      "size": 209821039,
+      "unpacked_size": 226062909,
+      "filename": "chinese.pth",
+      "member": "chinese.pth",
+      "model_sha256": "19ecc60f4e079eb2cd7f25f3513fc996cf80819fc1f1d0aee24c58402cc4776d",
+      "probe_code": "ch_tra"
+    },
+    {
+      "group": "tamil",
+      "url": "https://github.com/JaidedAI/EasyOCR/releases/download/v1.1.7/tamil.zip",
+      "sha256": "a6f372175127ab106c620b1d6af184e7075bd629d1e2aa22a88ac05bae68050d",
+      "size": 199783937,
+      "unpacked_size": 215314530,
+      "filename": "tamil.pth",
+      "member": "tamil.pth",
+      "model_sha256": "1e5e3336a4d4923da6246a76338c02cf9b366cfb3d1a84182bfc3d11df7d5a4d",
+      "probe_code": "ta"
+    },
+    {
+      "group": "telugu_g2",
+      "url": "https://github.com/JaidedAI/EasyOCR/releases/download/v1.2/telugu.zip",
+      "sha256": "cbcb5f570dc3cc36e9187f6d407610dadbc0dc88e214757b9182d45043a11d1f",
+      "size": 14108882,
+      "unpacked_size": 15209558,
+      "filename": "telugu.pth",
+      "member": "telugu.pth",
+      "model_sha256": "a73ba1c65f8b3e7b18df3104c1f137970510ce51e3e1d9341506292730fa3c43",
+      "probe_code": "te"
+    },
+    {
+      "group": "kannada_g2",
+      "url": "https://github.com/JaidedAI/EasyOCR/releases/download/v1.2/kannada.zip",
+      "sha256": "408ef9d7b68b99366d1dafc9b1275db80ed529252c2e1fa1038d4114cb9ef1d2",
+      "size": 14105056,
+      "unpacked_size": 15211614,
+      "filename": "kannada.pth",
+      "member": "kannada.pth",
+      "model_sha256": "3cc308972bccb2c483741e90e87f2941c1b40d84cf548115f48372d288deb0f0",
+      "probe_code": "kn"
+    },
+    {
+      "group": "bengali",
+      "url": "https://github.com/JaidedAI/EasyOCR/releases/download/v1.1.8/bengali.zip",
+      "sha256": "b9f88f7beef9aa5480c62e9f84c50be82214e5b209d0115465c30175eca4f944",
+      "size": 199852959,
+      "unpacked_size": 215369934,
+      "filename": "bengali.pth",
+      "member": "bengali.pth",
+      "model_sha256": "28d10d7dab96bf38c1d190d09a65a732130f5f34b28dcbd7e51aba3366146896",
+      "probe_code": "bn"
+    },
+    {
+      "group": "craft",
+      "url": "https://github.com/JaidedAI/EasyOCR/releases/download/pre-v1.1.6/craft_mlt_25k.zip",
+      "sha256": "8dc6a1c703a89ed56308ef742d26ebd45c656248cbbbda6e7fe60e569f873e65",
+      "size": 77251756,
+      "unpacked_size": 83152330,
+      "filename": "craft_mlt_25k.pth",
+      "member": "craft_mlt_25k.pth",
+      "model_sha256": "4a5efbfb48b4081100544e75e1e2b57f8de3d84f213004b14b85fd4b3748db17",
+      "probe_code": null
+    }
+  ]
+}

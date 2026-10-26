@@ -22,6 +22,8 @@ New RapidOCR/Argos candidates include pinned Microsoft runtime files and audit n
 
 Hy-MT Windows has a native **candidate** with a separately authenticated GGUF model, its matching license/document revision, and a curated llama.cpp CPU runner. The manual workflow compares b9048 and b11899 using the same model, verifies loaded private DLL paths and tests update without another model download, rollback, cancellation, invalid GGUF rejection and removal while a worker holds a lease. Candidate preparation does not publish a new model or runtime.
 
+EasyOCR Windows has a CPU-only **candidate** with its original 14 model families. Its manual workflow prepares exact Torch/torchvision CPU wheels and a hash-locked runtime, downloads authenticated upstream model ZIPs, and checks real recognition, updates, cancellation, invalid checkpoints, rollback and offline removal. Contract 2 supports installing a declared archive member; older clients keep using their supported profiles. Candidate artifacts remain separate from the public catalog.
+
 ## Maintenance
 
 Daily automation refreshes short-lived snapshot/timestamp metadata using restricted online keys. Approval of a new catalog requires the author's targets key. Targets approval expires after 90 days and must be renewed by the maintainer; refresh automation fails visibly before it can serve an expired approval.

@@ -42,12 +42,13 @@ def collect(get=requests.get, root=ROOT):
             results.append({'package':package,'pinned':pinned,'upstream':None,'candidate':None,
                             'approved':False,'error':type(error).__name__,
                             'http_status':getattr(getattr(error,'response',None),'status_code',None)})
-    watched={'rapidocr':'3.10.0','onnxruntime':'1.30.0','easyocr':'1.7.2','argostranslate':'1.11.0'}
-    for name in ('rapidocr','argos'):
+    watched={'rapidocr':'3.10.0','onnxruntime':'1.30.0','easyocr':'1.7.2','argostranslate':'1.11.0',
+             'torch':'2.14.1','torchvision':'0.29.1'}
+    for name in ('rapidocr','argos','easyocr'):
         recipe=json.loads((root/f'recipes/{name}-windows-x64.json').read_bytes())
         for item in [*recipe.get('requirements',()),*recipe.get('requirements_no_deps',())]:
             match=re.fullmatch(r'([\w-]+)(?:\[[^]]+\])?==([^ ;]+)',item)
-            if match and match[1] in watched:watched[match[1]]=match[2]
+            if match and match[1] in watched:watched[match[1]]=Version(match[2]).base_version
     for name,pinned in watched.items():
         record(name,pinned,lambda name=name:fetch(f'https://pypi.org/pypi/{name}/json')['info']['version'])
     tesseract=json.loads((root/'recipes/tesseract-windows-x64.json').read_bytes())

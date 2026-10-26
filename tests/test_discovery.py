@@ -40,7 +40,8 @@ class DiscoveryTests(unittest.TestCase):
             return SimpleNamespace(raise_for_status=lambda:None,json=lambda:value)
         with mock.patch.dict(os.environ,{'GITHUB_TOKEN':'test-secret-value'}):
             rows=discover.collect(get=get)
-        self.assertEqual(len(rows),8)
+        self.assertEqual(len(rows),10)
+        self.assertEqual(next(row['pinned'] for row in rows if row['package']=='torch'),'2.14.1')
         failed=next(row for row in rows if row['package']=='easyocr')
         self.assertIsNone(failed['candidate']);self.assertEqual(failed['http_status'],503)
         self.assertTrue(all(row['candidate'] for row in rows if row is not failed))
