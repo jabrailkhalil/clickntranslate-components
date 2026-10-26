@@ -53,5 +53,12 @@
   "macos_or_linux_profiles_published": false,
   "old_preview_profiles_preserved": true,
   "private_signing_keys_published": false,
-  "verification_states_recorded_before_public_catalog_approval": true
+  "verification_states_recorded_before_public_catalog_approval": true,
+  "metadata_deployment": {
+    "workflow_run": "https://github.com/jabrailkhalil/clickntranslate-components/actions/runs/40390646241",
+    "conclusion": "success"
+  },
+  "production_catalog_verification": "production-catalog.json",
+  "frozen_production_https_verification": "frozen-production-https.json",
+  "application_source_followup_commit": "f7a904848832ce2be2f700548007f448a86a127f"
 }

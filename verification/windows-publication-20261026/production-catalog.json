@@ -1,0 +1,27 @@
+{
+  "catalog_revision": 4,
+  "stable_profiles": [
+    [
+      "ocr.rapidocr",
+      "rapidocr-windows-x64-stable-r4"
+    ],
+    [
+      "translation.argos",
+      "argos-windows-x64-stable-r2"
+    ],
+    [
+      "translation.hymt",
+      "hymt-windows-x64-b11899-stable-r3"
+    ],
+    [
+      "ocr.easyocr",
+      "easyocr-windows-x64-stable-r2"
+    ],
+    [
+      "ocr.tesseract",
+      "tesseract-windows-x64-native-stable-r2"
+    ]
+  ],
+  "bootstrap": "public trust anchor from the delivered signed application",
+  "metadata_source": "production HTTPS GitHub Pages"
+}
